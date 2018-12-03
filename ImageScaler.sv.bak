@@ -1,0 +1,23 @@
+module ImageCropper(
+
+input logic CLK,
+input logic [7:0] VGA_R,
+input logic [7:0] VGA_G,
+input logic [7:0] VGA_B,
+input logic VGA_VS_in,
+input logic VGA_HS_in,
+output logic [7:0] image,
+output logic [18:0] coord
+
+);
+
+always_ff @(posedge CLK)
+	begin
+		
+		
+			
+		coord = 
+	
+	end
+
+endmodule 
