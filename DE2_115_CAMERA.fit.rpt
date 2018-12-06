@@ -1,5 +1,5 @@
 Fitter report for DE2_115_CAMERA
-Fri Nov 30 17:18:32 2018
+Wed Dec 05 23:17:35 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 30 17:18:31 2018       ;
+; Fitter Status                      ; Successful - Wed Dec 05 23:17:35 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_115_CAMERA                              ;
 ; Top-level Entity Name              ; DE2_115_CAMERA                              ;
@@ -202,7 +202,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.pin.
+The pin-out file can be found in C:/Facial-Recognition/DE2_115_CAMERA.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -4268,11 +4268,11 @@ Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors
 Info (119006): Selected device EP4CE115F29C7 for design "DE2_115_CAMERA"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
-Info (15535): Implemented PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" as Cyclone IV E PLL type File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-    Info (15099): Implementing clock multiplication of 2, clock division of 1, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[0] port File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-    Info (15099): Implementing clock multiplication of 2, clock division of 1, and phase shift of -108 degrees (-3000 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[1] port File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-    Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[2] port File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-    Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[3] port File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
+Info (15535): Implemented PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+    Info (15099): Implementing clock multiplication of 2, clock division of 1, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[0] port File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+    Info (15099): Implementing clock multiplication of 2, clock division of 1, and phase shift of -108 degrees (-3000 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[1] port File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+    Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[2] port File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+    Info (15099): Implementing clock multiplication of 1, clock division of 2, and phase shift of 0 degrees (0 ps) for sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[3] port File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -4323,45 +4323,45 @@ Info (332111): Found 7 clocks
     Info (332111):   10.000 u6|altpll_component|auto_generated|pll1|clk[1]
     Info (332111):   40.000 u6|altpll_component|auto_generated|pll1|clk[2]
     Info (332111):   40.000 u6|altpll_component|auto_generated|pll1|clk[3]
-Info (176353): Automatically promoted node CLOCK2_50~input (placed in PIN AG14 (CLK15, DIFFCLK_6p)) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 249
+Info (176353): Automatically promoted node CLOCK2_50~input (placed in PIN AG14 (CLK15, DIFFCLK_6p)) File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 249
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G15
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node I2C_CCD_Config:u8|mI2C_CTRL_CLK File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 66
-Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[0] (placed in counter C0 of PLL_4) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 31
+        Info (176357): Destination node I2C_CCD_Config:u8|mI2C_CTRL_CLK File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 66
+Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[0] (placed in counter C0 of PLL_4) File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 31
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
-Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[1] (placed in counter C2 of PLL_4) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 31
+Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[1] (placed in counter C2 of PLL_4) File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 31
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G17
-Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[2] (placed in counter C3 of PLL_4) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 31
+Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[2] (placed in counter C3 of PLL_4) File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 31
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G16
-Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[3] (placed in counter C1 of PLL_4) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 31
+Info (176353): Automatically promoted node sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|clk[3] (placed in counter C1 of PLL_4) File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 31
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node I2C_CCD_Config:u8|mI2C_CTRL_CLK  File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 66
+Info (176353): Automatically promoted node I2C_CCD_Config:u8|mI2C_CTRL_CLK  File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 66
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node I2C_CCD_Config:u8|I2C_Controller:u0|I2C_SCLK~1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 60
-        Info (176357): Destination node I2C_CCD_Config:u8|mI2C_CTRL_CLK~0 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 66
-Info (176353): Automatically promoted node Reset_Delay:u2|oRST_0  File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 46
+        Info (176357): Destination node I2C_CCD_Config:u8|I2C_Controller:u0|I2C_SCLK~1 File: C:/Facial-Recognition/v/I2C_Controller.v Line: 60
+        Info (176357): Destination node I2C_CCD_Config:u8|mI2C_CTRL_CLK~0 File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 66
+Info (176353): Automatically promoted node Reset_Delay:u2|oRST_0  File: C:/Facial-Recognition/v/Reset_Delay.v Line: 46
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node Sdram_Control:u7|mLENGTH[6]~0 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 489
-        Info (176357): Destination node Reset_Delay:u2|oRST_0~0 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 46
-Info (176353): Automatically promoted node Reset_Delay:u2|oRST_2  File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 48
+        Info (176357): Destination node Sdram_Control:u7|mLENGTH[6]~0 File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 489
+        Info (176357): Destination node Reset_Delay:u2|oRST_0~0 File: C:/Facial-Recognition/v/Reset_Delay.v Line: 46
+Info (176353): Automatically promoted node Reset_Delay:u2|oRST_2  File: C:/Facial-Recognition/v/Reset_Delay.v Line: 48
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node I2C_CCD_Config:u8|i2c_reset File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 156
-        Info (176357): Destination node Reset_Delay:u2|oRST_2~0 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 48
-Info (176353): Automatically promoted node Reset_Delay:u2|oRST_1  File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 47
+        Info (176357): Destination node I2C_CCD_Config:u8|i2c_reset File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 156
+        Info (176357): Destination node Reset_Delay:u2|oRST_2~0 File: C:/Facial-Recognition/v/Reset_Delay.v Line: 48
+Info (176353): Automatically promoted node Reset_Delay:u2|oRST_1  File: C:/Facial-Recognition/v/Reset_Delay.v Line: 47
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node Reset_Delay:u2|oRST_1~1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 47
-        Info (176357): Destination node D5M_RESET_N~output File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 427
+        Info (176357): Destination node Reset_Delay:u2|oRST_1~1 File: C:/Facial-Recognition/v/Reset_Delay.v Line: 47
+        Info (176357): Destination node D5M_RESET_N~output File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 427
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[1] feeds output pin "DRAM_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[2] feeds output pin "D5M_XCLKIN~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[3] feeds output pin "VGA_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
+Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[1] feeds output pin "DRAM_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[2] feeds output pin "D5M_XCLKIN~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+Warning (15064): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" output port clk[3] feeds output pin "VGA_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -4375,268 +4375,268 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 1.88 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.82 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (169177): 170 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 248
-    Info (169178): Pin CLOCK3_50 uses I/O standard 3.3-V LVTTL at AG15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 250
-    Info (169178): Pin SMA_CLKIN uses I/O standard 3.3-V LVTTL at AH14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 253
-    Info (169178): Pin UART_RTS uses I/O standard 3.3-V LVTTL at J13 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 289
-    Info (169178): Pin SD_WP_N uses I/O standard 3.3-V LVTTL at AF14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 303
-    Info (169178): Pin AUD_ADCDAT uses I/O standard 3.3-V LVTTL at D2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 316
-    Info (169178): Pin ENET0_LINK100 uses I/O standard 3.3-V LVTTL at C14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 334
-    Info (169178): Pin ENETCLK_25 uses I/O standard 3.3-V LVTTL at A14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 348
-    Info (169178): Pin ENET1_LINK100 uses I/O standard 3.3-V LVTTL at D13 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 353
-    Info (169178): Pin TD_CLK27 uses I/O standard 3.3-V LVTTL at B14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 369
-    Info (169178): Pin TD_DATA[0] uses I/O standard 3.3-V LVTTL at E8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[1] uses I/O standard 3.3-V LVTTL at A7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[2] uses I/O standard 3.3-V LVTTL at D8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[3] uses I/O standard 3.3-V LVTTL at C7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[4] uses I/O standard 3.3-V LVTTL at D7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[5] uses I/O standard 3.3-V LVTTL at D6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[6] uses I/O standard 3.3-V LVTTL at E7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_DATA[7] uses I/O standard 3.3-V LVTTL at F7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Info (169178): Pin TD_HS uses I/O standard 3.3-V LVTTL at E5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 371
-    Info (169178): Pin TD_VS uses I/O standard 3.3-V LVTTL at E4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 373
-    Info (169178): Pin OTG_DREQ[0] uses I/O standard 3.3-V LVTTL at J1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 380
-    Info (169178): Pin OTG_DREQ[1] uses I/O standard 3.3-V LVTTL at B4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 380
-    Info (169178): Pin OTG_INT[0] uses I/O standard 3.3-V LVTTL at A6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 382
-    Info (169178): Pin OTG_INT[1] uses I/O standard 3.3-V LVTTL at D5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 382
-    Info (169178): Pin IRDA_RXD uses I/O standard 3.3-V LVTTL at Y15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 389
-    Info (169178): Pin FL_RY uses I/O standard 3.3-V LVTTL at Y1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 418
-    Info (169178): Pin D5M_STROBE uses I/O standard 3.3-V LVTTL at AF22 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 430
-    Info (169178): Pin EX_IO[0] uses I/O standard 3.3-V LVTTL at J10 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[1] uses I/O standard 3.3-V LVTTL at J14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[2] uses I/O standard 3.3-V LVTTL at H13 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[3] uses I/O standard 3.3-V LVTTL at H14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[4] uses I/O standard 3.3-V LVTTL at F14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[5] uses I/O standard 3.3-V LVTTL at E10 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin EX_IO[6] uses I/O standard 3.3-V LVTTL at D9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169178): Pin LCD_DATA[0] uses I/O standard 3.3-V LVTTL at L3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[1] uses I/O standard 3.3-V LVTTL at L1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[2] uses I/O standard 3.3-V LVTTL at L2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[3] uses I/O standard 3.3-V LVTTL at K7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[4] uses I/O standard 3.3-V LVTTL at K1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[5] uses I/O standard 3.3-V LVTTL at K2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[6] uses I/O standard 3.3-V LVTTL at M3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin LCD_DATA[7] uses I/O standard 3.3-V LVTTL at M5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169178): Pin PS2_CLK uses I/O standard 3.3-V LVTTL at G6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 294
-    Info (169178): Pin PS2_CLK2 uses I/O standard 3.3-V LVTTL at G5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 295
-    Info (169178): Pin PS2_DAT uses I/O standard 3.3-V LVTTL at H5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 296
-    Info (169178): Pin PS2_DAT2 uses I/O standard 3.3-V LVTTL at F5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 297
-    Info (169178): Pin SD_CMD uses I/O standard 3.3-V LVTTL at AD14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 301
-    Info (169178): Pin SD_DAT[0] uses I/O standard 3.3-V LVTTL at AE14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169178): Pin SD_DAT[1] uses I/O standard 3.3-V LVTTL at AF13 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169178): Pin SD_DAT[2] uses I/O standard 3.3-V LVTTL at AB14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169178): Pin SD_DAT[3] uses I/O standard 3.3-V LVTTL at AC14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169178): Pin AUD_ADCLRCK uses I/O standard 3.3-V LVTTL at C2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 317
-    Info (169178): Pin AUD_BCLK uses I/O standard 3.3-V LVTTL at F2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 318
-    Info (169178): Pin AUD_DACLRCK uses I/O standard 3.3-V LVTTL at E3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 320
-    Info (169178): Pin EEP_I2C_SDAT uses I/O standard 3.3-V LVTTL at E14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 325
-    Info (169178): Pin I2C_SDAT uses I/O standard 3.3-V LVTTL at A8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 329
-    Info (169178): Pin OTG_DATA[0] uses I/O standard 3.3-V LVTTL at J6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[1] uses I/O standard 3.3-V LVTTL at K4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[2] uses I/O standard 3.3-V LVTTL at J5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[3] uses I/O standard 3.3-V LVTTL at K3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[4] uses I/O standard 3.3-V LVTTL at J4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[5] uses I/O standard 3.3-V LVTTL at J3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[6] uses I/O standard 3.3-V LVTTL at J7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[7] uses I/O standard 3.3-V LVTTL at H6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[8] uses I/O standard 3.3-V LVTTL at H3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[9] uses I/O standard 3.3-V LVTTL at H4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[10] uses I/O standard 3.3-V LVTTL at G1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[11] uses I/O standard 3.3-V LVTTL at G2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[12] uses I/O standard 3.3-V LVTTL at G3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[13] uses I/O standard 3.3-V LVTTL at F1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[14] uses I/O standard 3.3-V LVTTL at F3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_DATA[15] uses I/O standard 3.3-V LVTTL at G4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169178): Pin OTG_FSPEED uses I/O standard 3.3-V LVTTL at C6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 381
-    Info (169178): Pin OTG_LSPEED uses I/O standard 3.3-V LVTTL at B6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 383
-    Info (169178): Pin SRAM_DQ[0] uses I/O standard 3.3-V LVTTL at AH3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[1] uses I/O standard 3.3-V LVTTL at AF4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AG4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AH4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[4] uses I/O standard 3.3-V LVTTL at AF6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[5] uses I/O standard 3.3-V LVTTL at AG6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[6] uses I/O standard 3.3-V LVTTL at AH6 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[7] uses I/O standard 3.3-V LVTTL at AF7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[8] uses I/O standard 3.3-V LVTTL at AD1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[9] uses I/O standard 3.3-V LVTTL at AD2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[10] uses I/O standard 3.3-V LVTTL at AE2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[11] uses I/O standard 3.3-V LVTTL at AE1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[12] uses I/O standard 3.3-V LVTTL at AE3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[13] uses I/O standard 3.3-V LVTTL at AE4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[14] uses I/O standard 3.3-V LVTTL at AF3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin SRAM_DQ[15] uses I/O standard 3.3-V LVTTL at AG3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169178): Pin FL_DQ[0] uses I/O standard 3.3-V LVTTL at AH8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[1] uses I/O standard 3.3-V LVTTL at AF10 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[2] uses I/O standard 3.3-V LVTTL at AG10 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[3] uses I/O standard 3.3-V LVTTL at AH10 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[4] uses I/O standard 3.3-V LVTTL at AF11 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[5] uses I/O standard 3.3-V LVTTL at AG11 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[6] uses I/O standard 3.3-V LVTTL at AH11 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin FL_DQ[7] uses I/O standard 3.3-V LVTTL at AF12 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at W3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at W2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at V4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at W1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at V3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at V2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at V1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at U3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at Y3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at Y4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at AB1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at AA3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at AB2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at AC1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at AB3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at AC2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[16] uses I/O standard 3.3-V LVTTL at M8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[17] uses I/O standard 3.3-V LVTTL at L8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[18] uses I/O standard 3.3-V LVTTL at P2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[19] uses I/O standard 3.3-V LVTTL at N3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[20] uses I/O standard 3.3-V LVTTL at N4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[21] uses I/O standard 3.3-V LVTTL at M4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[22] uses I/O standard 3.3-V LVTTL at M7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[23] uses I/O standard 3.3-V LVTTL at L7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[24] uses I/O standard 3.3-V LVTTL at U5 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[25] uses I/O standard 3.3-V LVTTL at R7 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[26] uses I/O standard 3.3-V LVTTL at R1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[27] uses I/O standard 3.3-V LVTTL at R2 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[28] uses I/O standard 3.3-V LVTTL at R3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[29] uses I/O standard 3.3-V LVTTL at T3 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[30] uses I/O standard 3.3-V LVTTL at U4 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin DRAM_DQ[31] uses I/O standard 3.3-V LVTTL at U1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 398
-    Info (169178): Pin D5M_SDATA uses I/O standard 3.3-V LVTTL at AD25 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 429
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at AB28 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at AC28 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at AC27 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at AD27 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at AB27 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at AC26 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at AD26 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at AB26 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at AC25 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at AB25 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[10] uses I/O standard 3.3-V LVTTL at AC24 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[11] uses I/O standard 3.3-V LVTTL at AB24 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[12] uses I/O standard 3.3-V LVTTL at AB23 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[13] uses I/O standard 3.3-V LVTTL at AA24 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[14] uses I/O standard 3.3-V LVTTL at AA23 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[15] uses I/O standard 3.3-V LVTTL at AA22 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[16] uses I/O standard 3.3-V LVTTL at Y24 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin SW[17] uses I/O standard 3.3-V LVTTL at Y23 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 267
-    Info (169178): Pin UART_RXD uses I/O standard 3.3-V LVTTL at G12 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 290
-    Info (169178): Pin D5M_PIXLCLK uses I/O standard 3.3-V LVTTL at AB22 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 426
-    Info (169178): Pin CLOCK2_50 uses I/O standard 3.3-V LVTTL at AG14 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 249
-    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at M23 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 261
-    Info (169178): Pin D5M_FVAL uses I/O standard 3.3-V LVTTL at AG25 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 424
-    Info (169178): Pin KEY[2] uses I/O standard 3.3-V LVTTL at N21 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 261
-    Info (169178): Pin KEY[3] uses I/O standard 3.3-V LVTTL at R24 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 261
-    Info (169178): Pin D5M_LVAL uses I/O standard 3.3-V LVTTL at AD22 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 425
-    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at M21 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 261
-    Info (169178): Pin D5M_D[2] uses I/O standard 3.3-V LVTTL at AF16 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[3] uses I/O standard 3.3-V LVTTL at AC19 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[4] uses I/O standard 3.3-V LVTTL at AE15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[5] uses I/O standard 3.3-V LVTTL at AD15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[6] uses I/O standard 3.3-V LVTTL at AE16 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[7] uses I/O standard 3.3-V LVTTL at AD21 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[8] uses I/O standard 3.3-V LVTTL at Y16 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[9] uses I/O standard 3.3-V LVTTL at AC21 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[10] uses I/O standard 3.3-V LVTTL at Y17 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[11] uses I/O standard 3.3-V LVTTL at AC15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[1] uses I/O standard 3.3-V LVTTL at AD19 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
-    Info (169178): Pin D5M_D[0] uses I/O standard 3.3-V LVTTL at AF15 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 248
+    Info (169178): Pin CLOCK3_50 uses I/O standard 3.3-V LVTTL at AG15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 250
+    Info (169178): Pin SMA_CLKIN uses I/O standard 3.3-V LVTTL at AH14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 253
+    Info (169178): Pin UART_RTS uses I/O standard 3.3-V LVTTL at J13 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 289
+    Info (169178): Pin SD_WP_N uses I/O standard 3.3-V LVTTL at AF14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 303
+    Info (169178): Pin AUD_ADCDAT uses I/O standard 3.3-V LVTTL at D2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 316
+    Info (169178): Pin ENET0_LINK100 uses I/O standard 3.3-V LVTTL at C14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 334
+    Info (169178): Pin ENETCLK_25 uses I/O standard 3.3-V LVTTL at A14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 348
+    Info (169178): Pin ENET1_LINK100 uses I/O standard 3.3-V LVTTL at D13 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 353
+    Info (169178): Pin TD_CLK27 uses I/O standard 3.3-V LVTTL at B14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 369
+    Info (169178): Pin TD_DATA[0] uses I/O standard 3.3-V LVTTL at E8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[1] uses I/O standard 3.3-V LVTTL at A7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[2] uses I/O standard 3.3-V LVTTL at D8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[3] uses I/O standard 3.3-V LVTTL at C7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[4] uses I/O standard 3.3-V LVTTL at D7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[5] uses I/O standard 3.3-V LVTTL at D6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[6] uses I/O standard 3.3-V LVTTL at E7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_DATA[7] uses I/O standard 3.3-V LVTTL at F7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Info (169178): Pin TD_HS uses I/O standard 3.3-V LVTTL at E5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 371
+    Info (169178): Pin TD_VS uses I/O standard 3.3-V LVTTL at E4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 373
+    Info (169178): Pin OTG_DREQ[0] uses I/O standard 3.3-V LVTTL at J1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 380
+    Info (169178): Pin OTG_DREQ[1] uses I/O standard 3.3-V LVTTL at B4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 380
+    Info (169178): Pin OTG_INT[0] uses I/O standard 3.3-V LVTTL at A6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 382
+    Info (169178): Pin OTG_INT[1] uses I/O standard 3.3-V LVTTL at D5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 382
+    Info (169178): Pin IRDA_RXD uses I/O standard 3.3-V LVTTL at Y15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 389
+    Info (169178): Pin FL_RY uses I/O standard 3.3-V LVTTL at Y1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 418
+    Info (169178): Pin D5M_STROBE uses I/O standard 3.3-V LVTTL at AF22 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 430
+    Info (169178): Pin EX_IO[0] uses I/O standard 3.3-V LVTTL at J10 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[1] uses I/O standard 3.3-V LVTTL at J14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[2] uses I/O standard 3.3-V LVTTL at H13 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[3] uses I/O standard 3.3-V LVTTL at H14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[4] uses I/O standard 3.3-V LVTTL at F14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[5] uses I/O standard 3.3-V LVTTL at E10 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin EX_IO[6] uses I/O standard 3.3-V LVTTL at D9 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169178): Pin LCD_DATA[0] uses I/O standard 3.3-V LVTTL at L3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[1] uses I/O standard 3.3-V LVTTL at L1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[2] uses I/O standard 3.3-V LVTTL at L2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[3] uses I/O standard 3.3-V LVTTL at K7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[4] uses I/O standard 3.3-V LVTTL at K1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[5] uses I/O standard 3.3-V LVTTL at K2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[6] uses I/O standard 3.3-V LVTTL at M3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin LCD_DATA[7] uses I/O standard 3.3-V LVTTL at M5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169178): Pin PS2_CLK uses I/O standard 3.3-V LVTTL at G6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 294
+    Info (169178): Pin PS2_CLK2 uses I/O standard 3.3-V LVTTL at G5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 295
+    Info (169178): Pin PS2_DAT uses I/O standard 3.3-V LVTTL at H5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 296
+    Info (169178): Pin PS2_DAT2 uses I/O standard 3.3-V LVTTL at F5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 297
+    Info (169178): Pin SD_CMD uses I/O standard 3.3-V LVTTL at AD14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 301
+    Info (169178): Pin SD_DAT[0] uses I/O standard 3.3-V LVTTL at AE14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169178): Pin SD_DAT[1] uses I/O standard 3.3-V LVTTL at AF13 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169178): Pin SD_DAT[2] uses I/O standard 3.3-V LVTTL at AB14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169178): Pin SD_DAT[3] uses I/O standard 3.3-V LVTTL at AC14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169178): Pin AUD_ADCLRCK uses I/O standard 3.3-V LVTTL at C2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 317
+    Info (169178): Pin AUD_BCLK uses I/O standard 3.3-V LVTTL at F2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 318
+    Info (169178): Pin AUD_DACLRCK uses I/O standard 3.3-V LVTTL at E3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 320
+    Info (169178): Pin EEP_I2C_SDAT uses I/O standard 3.3-V LVTTL at E14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 325
+    Info (169178): Pin I2C_SDAT uses I/O standard 3.3-V LVTTL at A8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 329
+    Info (169178): Pin OTG_DATA[0] uses I/O standard 3.3-V LVTTL at J6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[1] uses I/O standard 3.3-V LVTTL at K4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[2] uses I/O standard 3.3-V LVTTL at J5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[3] uses I/O standard 3.3-V LVTTL at K3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[4] uses I/O standard 3.3-V LVTTL at J4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[5] uses I/O standard 3.3-V LVTTL at J3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[6] uses I/O standard 3.3-V LVTTL at J7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[7] uses I/O standard 3.3-V LVTTL at H6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[8] uses I/O standard 3.3-V LVTTL at H3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[9] uses I/O standard 3.3-V LVTTL at H4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[10] uses I/O standard 3.3-V LVTTL at G1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[11] uses I/O standard 3.3-V LVTTL at G2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[12] uses I/O standard 3.3-V LVTTL at G3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[13] uses I/O standard 3.3-V LVTTL at F1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[14] uses I/O standard 3.3-V LVTTL at F3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_DATA[15] uses I/O standard 3.3-V LVTTL at G4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169178): Pin OTG_FSPEED uses I/O standard 3.3-V LVTTL at C6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 381
+    Info (169178): Pin OTG_LSPEED uses I/O standard 3.3-V LVTTL at B6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 383
+    Info (169178): Pin SRAM_DQ[0] uses I/O standard 3.3-V LVTTL at AH3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[1] uses I/O standard 3.3-V LVTTL at AF4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AG4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AH4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[4] uses I/O standard 3.3-V LVTTL at AF6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[5] uses I/O standard 3.3-V LVTTL at AG6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[6] uses I/O standard 3.3-V LVTTL at AH6 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[7] uses I/O standard 3.3-V LVTTL at AF7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[8] uses I/O standard 3.3-V LVTTL at AD1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[9] uses I/O standard 3.3-V LVTTL at AD2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[10] uses I/O standard 3.3-V LVTTL at AE2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[11] uses I/O standard 3.3-V LVTTL at AE1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[12] uses I/O standard 3.3-V LVTTL at AE3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[13] uses I/O standard 3.3-V LVTTL at AE4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[14] uses I/O standard 3.3-V LVTTL at AF3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin SRAM_DQ[15] uses I/O standard 3.3-V LVTTL at AG3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169178): Pin FL_DQ[0] uses I/O standard 3.3-V LVTTL at AH8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[1] uses I/O standard 3.3-V LVTTL at AF10 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[2] uses I/O standard 3.3-V LVTTL at AG10 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[3] uses I/O standard 3.3-V LVTTL at AH10 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[4] uses I/O standard 3.3-V LVTTL at AF11 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[5] uses I/O standard 3.3-V LVTTL at AG11 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[6] uses I/O standard 3.3-V LVTTL at AH11 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin FL_DQ[7] uses I/O standard 3.3-V LVTTL at AF12 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at W3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at W2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at V4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at W1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at V3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at V2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at V1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at U3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at Y3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at Y4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at AB1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at AA3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at AB2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at AC1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at AB3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at AC2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[16] uses I/O standard 3.3-V LVTTL at M8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[17] uses I/O standard 3.3-V LVTTL at L8 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[18] uses I/O standard 3.3-V LVTTL at P2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[19] uses I/O standard 3.3-V LVTTL at N3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[20] uses I/O standard 3.3-V LVTTL at N4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[21] uses I/O standard 3.3-V LVTTL at M4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[22] uses I/O standard 3.3-V LVTTL at M7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[23] uses I/O standard 3.3-V LVTTL at L7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[24] uses I/O standard 3.3-V LVTTL at U5 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[25] uses I/O standard 3.3-V LVTTL at R7 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[26] uses I/O standard 3.3-V LVTTL at R1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[27] uses I/O standard 3.3-V LVTTL at R2 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[28] uses I/O standard 3.3-V LVTTL at R3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[29] uses I/O standard 3.3-V LVTTL at T3 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[30] uses I/O standard 3.3-V LVTTL at U4 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin DRAM_DQ[31] uses I/O standard 3.3-V LVTTL at U1 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 398
+    Info (169178): Pin D5M_SDATA uses I/O standard 3.3-V LVTTL at AD25 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 429
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at AB28 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at AC28 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at AC27 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at AD27 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at AB27 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at AC26 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at AD26 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at AB26 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at AC25 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at AB25 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[10] uses I/O standard 3.3-V LVTTL at AC24 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[11] uses I/O standard 3.3-V LVTTL at AB24 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[12] uses I/O standard 3.3-V LVTTL at AB23 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[13] uses I/O standard 3.3-V LVTTL at AA24 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[14] uses I/O standard 3.3-V LVTTL at AA23 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[15] uses I/O standard 3.3-V LVTTL at AA22 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[16] uses I/O standard 3.3-V LVTTL at Y24 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin SW[17] uses I/O standard 3.3-V LVTTL at Y23 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 267
+    Info (169178): Pin UART_RXD uses I/O standard 3.3-V LVTTL at G12 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 290
+    Info (169178): Pin D5M_PIXLCLK uses I/O standard 3.3-V LVTTL at AB22 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 426
+    Info (169178): Pin CLOCK2_50 uses I/O standard 3.3-V LVTTL at AG14 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 249
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at M23 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 261
+    Info (169178): Pin D5M_FVAL uses I/O standard 3.3-V LVTTL at AG25 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 424
+    Info (169178): Pin KEY[2] uses I/O standard 3.3-V LVTTL at N21 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 261
+    Info (169178): Pin KEY[3] uses I/O standard 3.3-V LVTTL at R24 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 261
+    Info (169178): Pin D5M_LVAL uses I/O standard 3.3-V LVTTL at AD22 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 425
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at M21 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 261
+    Info (169178): Pin D5M_D[2] uses I/O standard 3.3-V LVTTL at AF16 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[3] uses I/O standard 3.3-V LVTTL at AC19 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[4] uses I/O standard 3.3-V LVTTL at AE15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[5] uses I/O standard 3.3-V LVTTL at AD15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[6] uses I/O standard 3.3-V LVTTL at AE16 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[7] uses I/O standard 3.3-V LVTTL at AD21 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[8] uses I/O standard 3.3-V LVTTL at Y16 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[9] uses I/O standard 3.3-V LVTTL at AC21 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[10] uses I/O standard 3.3-V LVTTL at Y17 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[11] uses I/O standard 3.3-V LVTTL at AC15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[1] uses I/O standard 3.3-V LVTTL at AD19 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
+    Info (169178): Pin D5M_D[0] uses I/O standard 3.3-V LVTTL at AF15 File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 423
 Warning (169064): Following 73 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin EX_IO[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[4] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[5] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin EX_IO[6] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Info (169065): Pin LCD_DATA[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[4] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[5] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[6] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin LCD_DATA[7] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Info (169065): Pin PS2_CLK has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 294
-    Info (169065): Pin PS2_CLK2 has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 295
-    Info (169065): Pin PS2_DAT has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 296
-    Info (169065): Pin PS2_DAT2 has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 297
-    Info (169065): Pin SD_CMD has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 301
-    Info (169065): Pin SD_DAT[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169065): Pin SD_DAT[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169065): Pin SD_DAT[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169065): Pin SD_DAT[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Info (169065): Pin AUD_ADCLRCK has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 317
-    Info (169065): Pin AUD_BCLK has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 318
-    Info (169065): Pin AUD_DACLRCK has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 320
-    Info (169065): Pin EEP_I2C_SDAT has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 325
-    Info (169065): Pin I2C_SDAT has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 329
-    Info (169065): Pin ENET0_MDIO has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 336
-    Info (169065): Pin ENET1_MDIO has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 355
-    Info (169065): Pin OTG_DATA[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[4] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[5] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[6] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[7] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[8] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[9] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[10] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[11] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[12] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[13] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[14] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_DATA[15] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Info (169065): Pin OTG_FSPEED has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 381
-    Info (169065): Pin OTG_LSPEED has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 383
-    Info (169065): Pin SRAM_DQ[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[4] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[5] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[6] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[7] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[8] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[9] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[10] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[11] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[12] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[13] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[14] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin SRAM_DQ[15] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Info (169065): Pin FL_DQ[0] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[1] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[2] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[3] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[4] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[5] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[6] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Info (169065): Pin FL_DQ[7] has a permanently disabled output enable File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-Info (144001): Generated suppressed messages file C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.fit.smsg
+    Info (169065): Pin EX_IO[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[4] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[5] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin EX_IO[6] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Info (169065): Pin LCD_DATA[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[4] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[5] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[6] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin LCD_DATA[7] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Info (169065): Pin PS2_CLK has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 294
+    Info (169065): Pin PS2_CLK2 has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 295
+    Info (169065): Pin PS2_DAT has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 296
+    Info (169065): Pin PS2_DAT2 has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 297
+    Info (169065): Pin SD_CMD has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 301
+    Info (169065): Pin SD_DAT[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169065): Pin SD_DAT[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169065): Pin SD_DAT[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169065): Pin SD_DAT[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Info (169065): Pin AUD_ADCLRCK has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 317
+    Info (169065): Pin AUD_BCLK has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 318
+    Info (169065): Pin AUD_DACLRCK has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 320
+    Info (169065): Pin EEP_I2C_SDAT has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 325
+    Info (169065): Pin I2C_SDAT has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 329
+    Info (169065): Pin ENET0_MDIO has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 336
+    Info (169065): Pin ENET1_MDIO has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 355
+    Info (169065): Pin OTG_DATA[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[4] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[5] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[6] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[7] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[8] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[9] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[10] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[11] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[12] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[13] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[14] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_DATA[15] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Info (169065): Pin OTG_FSPEED has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 381
+    Info (169065): Pin OTG_LSPEED has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 383
+    Info (169065): Pin SRAM_DQ[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[4] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[5] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[6] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[7] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[8] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[9] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[10] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[11] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[12] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[13] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[14] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin SRAM_DQ[15] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Info (169065): Pin FL_DQ[0] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[1] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[2] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[3] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[4] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[5] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[6] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Info (169065): Pin FL_DQ[7] has a permanently disabled output enable File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+Info (144001): Generated suppressed messages file C:/Facial-Recognition/DE2_115_CAMERA.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 5477 megabytes
-    Info: Processing ended: Fri Nov 30 17:18:33 2018
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Peak virtual memory: 5472 megabytes
+    Info: Processing ended: Wed Dec 05 23:17:36 2018
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.fit.smsg.
+The suppressed messages can be found in C:/Facial-Recognition/DE2_115_CAMERA.fit.smsg.
 
 

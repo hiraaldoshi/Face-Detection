@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_115_CAMERA
-Fri Nov 30 17:17:56 2018
+Wed Dec 05 23:16:59 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -116,7 +116,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 30 17:17:56 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 05 23:16:58 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_115_CAMERA                              ;
 ; Top-level Entity Name              ; DE2_115_CAMERA                              ;
@@ -236,67 +236,67 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; Sdram_Control/command.v           ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/command.v           ;         ;
-; Sdram_Control/control_interface.v ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/control_interface.v ;         ;
-; Sdram_Control/sdr_data_path.v     ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/sdr_data_path.v     ;         ;
-; Sdram_Control/Sdram_Control.v     ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v     ;         ;
-; Sdram_Control/Sdram_Params.h      ; yes             ; User File                    ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Params.h      ;         ;
-; Sdram_Control/Sdram_RD_FIFO.v     ; yes             ; User Wizard-Generated File   ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_RD_FIFO.v     ;         ;
-; Sdram_Control/Sdram_WR_FIFO.v     ; yes             ; User Wizard-Generated File   ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_WR_FIFO.v     ;         ;
-; v/CCD_Capture.v                   ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v                   ;         ;
-; v/I2C_CCD_Config.v                ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v                ;         ;
-; v/I2C_Controller.v                ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v                ;         ;
-; v/RAW2RGB.v                       ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/RAW2RGB.v                       ;         ;
-; v/Reset_Delay.v                   ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v                   ;         ;
-; v/SEG7_LUT.v                      ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/SEG7_LUT.v                      ;         ;
-; v/SEG7_LUT_8.v                    ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/SEG7_LUT_8.v                    ;         ;
-; v/VGA_Controller.v                ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v                ;         ;
-; v/sdram_pll.v                     ; yes             ; User Wizard-Generated File   ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/sdram_pll.v                     ;         ;
-; VGA_Param.h                       ; yes             ; User File                    ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/VGA_Param.h                       ;         ;
-; v/Line_Buffer1.v                  ; yes             ; User Wizard-Generated File   ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer1.v                  ;         ;
-; DE2_115_CAMERA.v                  ; yes             ; User Verilog HDL File        ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v                  ;         ;
-; altshift_taps.tdf                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift_taps.tdf              ;         ;
-; altdpram.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc                   ;         ;
-; lpm_counter.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_counter.inc                ;         ;
-; lpm_compare.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.inc                ;         ;
-; lpm_constant.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_constant.inc               ;         ;
-; db/shift_taps_3uv.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/shift_taps_3uv.tdf             ;         ;
-; db/altsyncram_rma1.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_rma1.tdf            ;         ;
-; db/cntr_lvf.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cntr_lvf.tdf                   ;         ;
-; db/cmpr_8ic.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cmpr_8ic.tdf                   ;         ;
-; altpll.tdf                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf                     ;         ;
-; aglobal180.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                 ;         ;
-; stratix_pll.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_pll.inc                ;         ;
-; stratixii_pll.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratixii_pll.inc              ;         ;
-; cycloneii_pll.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/cycloneii_pll.inc              ;         ;
-; db/altpll_f423.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf                ;         ;
-; dcfifo_mixed_widths.tdf           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf        ;         ;
-; db/dcfifo_lhh1.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf                ;         ;
-; db/a_gray2bin_ugb.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_gray2bin_ugb.tdf             ;         ;
-; db/a_graycounter_t57.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_t57.tdf          ;         ;
-; db/a_graycounter_ojc.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_ojc.tdf          ;         ;
-; db/altsyncram_rj31.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_rj31.tdf            ;         ;
-; db/dffpipe_gd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_gd9.tdf                ;         ;
-; db/alt_synch_pipe_0ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_0ol.tdf         ;         ;
-; db/dffpipe_hd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_hd9.tdf                ;         ;
-; db/alt_synch_pipe_1ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_1ol.tdf         ;         ;
-; db/dffpipe_id9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_id9.tdf                ;         ;
-; db/cmpr_f66.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cmpr_f66.tdf                   ;         ;
-; db/cntr_54e.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cntr_54e.tdf                   ;         ;
-; db/dcfifo_dih1.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf                ;         ;
-; db/a_graycounter_s57.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_s57.tdf          ;         ;
-; db/a_graycounter_pjc.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_pjc.tdf          ;         ;
-; db/altsyncram_sj31.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf            ;         ;
-; db/alt_synch_pipe_2ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_2ol.tdf         ;         ;
-; db/dffpipe_jd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_jd9.tdf                ;         ;
-; db/alt_synch_pipe_3ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_3ol.tdf         ;         ;
-; db/dffpipe_kd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_kd9.tdf                ;         ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++-----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++-----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; Sdram_Control/command.v           ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/Sdram_Control/command.v                                  ;         ;
+; Sdram_Control/control_interface.v ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/Sdram_Control/control_interface.v                        ;         ;
+; Sdram_Control/sdr_data_path.v     ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/Sdram_Control/sdr_data_path.v                            ;         ;
+; Sdram_Control/Sdram_Control.v     ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/Sdram_Control/Sdram_Control.v                            ;         ;
+; Sdram_Control/Sdram_Params.h      ; yes             ; User File                    ; C:/Facial-Recognition/Sdram_Control/Sdram_Params.h                             ;         ;
+; Sdram_Control/Sdram_RD_FIFO.v     ; yes             ; User Wizard-Generated File   ; C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v                            ;         ;
+; Sdram_Control/Sdram_WR_FIFO.v     ; yes             ; User Wizard-Generated File   ; C:/Facial-Recognition/Sdram_Control/Sdram_WR_FIFO.v                            ;         ;
+; v/CCD_Capture.v                   ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/CCD_Capture.v                                          ;         ;
+; v/I2C_CCD_Config.v                ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/I2C_CCD_Config.v                                       ;         ;
+; v/I2C_Controller.v                ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/I2C_Controller.v                                       ;         ;
+; v/RAW2RGB.v                       ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/RAW2RGB.v                                              ;         ;
+; v/Reset_Delay.v                   ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/Reset_Delay.v                                          ;         ;
+; v/SEG7_LUT.v                      ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/SEG7_LUT.v                                             ;         ;
+; v/SEG7_LUT_8.v                    ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/SEG7_LUT_8.v                                           ;         ;
+; v/VGA_Controller.v                ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/v/VGA_Controller.v                                       ;         ;
+; v/sdram_pll.v                     ; yes             ; User Wizard-Generated File   ; C:/Facial-Recognition/v/sdram_pll.v                                            ;         ;
+; VGA_Param.h                       ; yes             ; User File                    ; C:/Facial-Recognition/VGA_Param.h                                              ;         ;
+; v/Line_Buffer1.v                  ; yes             ; User Wizard-Generated File   ; C:/Facial-Recognition/v/Line_Buffer1.v                                         ;         ;
+; DE2_115_CAMERA.v                  ; yes             ; User Verilog HDL File        ; C:/Facial-Recognition/DE2_115_CAMERA.v                                         ;         ;
+; altshift_taps.tdf                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift_taps.tdf       ;         ;
+; altdpram.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; lpm_counter.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; lpm_compare.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_constant.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; db/shift_taps_3uv.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/shift_taps_3uv.tdf                                    ;         ;
+; db/altsyncram_rma1.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/altsyncram_rma1.tdf                                   ;         ;
+; db/cntr_lvf.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/cntr_lvf.tdf                                          ;         ;
+; db/cmpr_8ic.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/cmpr_8ic.tdf                                          ;         ;
+; altpll.tdf                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf              ;         ;
+; aglobal180.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc          ;         ;
+; stratix_pll.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_pll.inc         ;         ;
+; stratixii_pll.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratixii_pll.inc       ;         ;
+; cycloneii_pll.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/cycloneii_pll.inc       ;         ;
+; db/altpll_f423.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/altpll_f423.tdf                                       ;         ;
+; dcfifo_mixed_widths.tdf           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf ;         ;
+; db/dcfifo_lhh1.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dcfifo_lhh1.tdf                                       ;         ;
+; db/a_gray2bin_ugb.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/a_gray2bin_ugb.tdf                                    ;         ;
+; db/a_graycounter_t57.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/a_graycounter_t57.tdf                                 ;         ;
+; db/a_graycounter_ojc.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/a_graycounter_ojc.tdf                                 ;         ;
+; db/altsyncram_rj31.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/altsyncram_rj31.tdf                                   ;         ;
+; db/dffpipe_gd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dffpipe_gd9.tdf                                       ;         ;
+; db/alt_synch_pipe_0ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/alt_synch_pipe_0ol.tdf                                ;         ;
+; db/dffpipe_hd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dffpipe_hd9.tdf                                       ;         ;
+; db/alt_synch_pipe_1ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/alt_synch_pipe_1ol.tdf                                ;         ;
+; db/dffpipe_id9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dffpipe_id9.tdf                                       ;         ;
+; db/cmpr_f66.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/cmpr_f66.tdf                                          ;         ;
+; db/cntr_54e.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/cntr_54e.tdf                                          ;         ;
+; db/dcfifo_dih1.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dcfifo_dih1.tdf                                       ;         ;
+; db/a_graycounter_s57.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/a_graycounter_s57.tdf                                 ;         ;
+; db/a_graycounter_pjc.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/a_graycounter_pjc.tdf                                 ;         ;
+; db/altsyncram_sj31.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/altsyncram_sj31.tdf                                   ;         ;
+; db/alt_synch_pipe_2ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/alt_synch_pipe_2ol.tdf                                ;         ;
+; db/dffpipe_jd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dffpipe_jd9.tdf                                       ;         ;
+; db/alt_synch_pipe_3ol.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/alt_synch_pipe_3ol.tdf                                ;         ;
+; db/dffpipe_kd9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Facial-Recognition/db/dffpipe_kd9.tdf                                       ;         ;
++-----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -2096,112 +2096,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 30 17:17:21 2018
+    Info: Processing started: Wed Dec 05 23:16:28 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE2_115_CAMERA -c DE2_115_CAMERA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/command.v
-    Info (12023): Found entity 1: command File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/command.v Line: 43
+    Info (12023): Found entity 1: command File: C:/Facial-Recognition/Sdram_Control/command.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/control_interface.v
-    Info (12023): Found entity 1: control_interface File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/control_interface.v Line: 43
-Warning (10229): Verilog HDL Expression warning at sdr_data_path.v(68): truncated literal to match 1 bits File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/sdr_data_path.v Line: 68
+    Info (12023): Found entity 1: control_interface File: C:/Facial-Recognition/Sdram_Control/control_interface.v Line: 43
+Warning (10229): Verilog HDL Expression warning at sdr_data_path.v(68): truncated literal to match 1 bits File: C:/Facial-Recognition/Sdram_Control/sdr_data_path.v Line: 68
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdr_data_path.v
-    Info (12023): Found entity 1: sdr_data_path File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/sdr_data_path.v Line: 43
+    Info (12023): Found entity 1: sdr_data_path File: C:/Facial-Recognition/Sdram_Control/sdr_data_path.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdram_control.v
-    Info (12023): Found entity 1: Sdram_Control File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 37
+    Info (12023): Found entity 1: Sdram_Control File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdram_rd_fifo.v
-    Info (12023): Found entity 1: Sdram_RD_FIFO File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_RD_FIFO.v Line: 39
+    Info (12023): Found entity 1: Sdram_RD_FIFO File: C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdram_wr_fifo.v
-    Info (12023): Found entity 1: Sdram_WR_FIFO File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_WR_FIFO.v Line: 39
+    Info (12023): Found entity 1: Sdram_WR_FIFO File: C:/Facial-Recognition/Sdram_Control/Sdram_WR_FIFO.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file v/ccd_capture.v
-    Info (12023): Found entity 1: CCD_Capture File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 43
+    Info (12023): Found entity 1: CCD_Capture File: C:/Facial-Recognition/v/CCD_Capture.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_ccd_config.v
-    Info (12023): Found entity 1: I2C_CCD_Config File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 43
+    Info (12023): Found entity 1: I2C_CCD_Config File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_controller.v
-    Info (12023): Found entity 1: I2C_Controller File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 42
+    Info (12023): Found entity 1: I2C_Controller File: C:/Facial-Recognition/v/I2C_Controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file v/line_buffer.v
-    Info (12023): Found entity 1: Line_Buffer File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer.v Line: 39
+    Info (12023): Found entity 1: Line_Buffer File: C:/Facial-Recognition/v/Line_Buffer.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file v/raw2rgb.v
-    Info (12023): Found entity 1: RAW2RGB File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/RAW2RGB.v Line: 44
+    Info (12023): Found entity 1: RAW2RGB File: C:/Facial-Recognition/v/RAW2RGB.v Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file v/reset_delay.v
-    Info (12023): Found entity 1: Reset_Delay File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Reset_Delay.v Line: 43
+    Info (12023): Found entity 1: Reset_Delay File: C:/Facial-Recognition/v/Reset_Delay.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v/seg7_lut.v
-    Info (12023): Found entity 1: SEG7_LUT File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/SEG7_LUT.v Line: 43
+    Info (12023): Found entity 1: SEG7_LUT File: C:/Facial-Recognition/v/SEG7_LUT.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v/seg7_lut_8.v
-    Info (12023): Found entity 1: SEG7_LUT_8 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/SEG7_LUT_8.v Line: 43
+    Info (12023): Found entity 1: SEG7_LUT_8 File: C:/Facial-Recognition/v/SEG7_LUT_8.v Line: 43
 Warning (12019): Can't analyze file -- file v/Stack_RAM.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file v/vga_controller.v
-    Info (12023): Found entity 1: VGA_Controller File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 43
+    Info (12023): Found entity 1: VGA_Controller File: C:/Facial-Recognition/v/VGA_Controller.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v/sdram_pll.v
-    Info (12023): Found entity 1: sdram_pll File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/sdram_pll.v Line: 40
+    Info (12023): Found entity 1: sdram_pll File: C:/Facial-Recognition/v/sdram_pll.v Line: 40
 Warning (12019): Can't analyze file -- file v/touch_tcon.v is missing
 Warning (12019): Can't analyze file -- file v/VGA_Param.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file v/line_buffer1.v
-    Info (12023): Found entity 1: Line_Buffer1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer1.v Line: 40
+    Info (12023): Found entity 1: Line_Buffer1 File: C:/Facial-Recognition/v/Line_Buffer1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file de2_115_camera.v
-    Info (12023): Found entity 1: DE2_115_CAMERA File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 48
+    Info (12023): Found entity 1: DE2_115_CAMERA File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 48
 Info (12021): Found 1 design units, including 1 entities, in source file imagescaler.sv
-    Info (12023): Found entity 1: ImageScaler File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/ImageScaler.sv Line: 1
+    Info (12023): Found entity 1: ImageScaler File: C:/Facial-Recognition/ImageScaler.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file classifier.sv
-    Info (12023): Found entity 1: Classifier File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Classifier.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DE2_115_CAMERA.v(475): created implicit net for "VGA_CTRL_CLK" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 475
+    Info (12023): Found entity 1: Classifier File: C:/Facial-Recognition/Classifier.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DE2_115_CAMERA.v(475): created implicit net for "VGA_CTRL_CLK" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 475
 Info (12127): Elaborating entity "DE2_115_CAMERA" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at DE2_115_CAMERA.v(478): truncated value with size 16 to match size of target (9) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 478
-Warning (10034): Output port "ENET0_TX_DATA" at DE2_115_CAMERA.v(345) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 345
-Warning (10034): Output port "ENET1_TX_DATA" at DE2_115_CAMERA.v(364) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 364
-Warning (10034): Output port "OTG_ADDR" at DE2_115_CAMERA.v(376) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 376
-Warning (10034): Output port "OTG_DACK_N" at DE2_115_CAMERA.v(378) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 378
-Warning (10034): Output port "SRAM_ADDR" at DE2_115_CAMERA.v(404) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-Warning (10034): Output port "FL_ADDR" at DE2_115_CAMERA.v(413) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-Warning (10034): Output port "SMA_CLKOUT" at DE2_115_CAMERA.v(254) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 254
-Warning (10034): Output port "LCD_BLON" at DE2_115_CAMERA.v(280) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 280
-Warning (10034): Output port "LCD_EN" at DE2_115_CAMERA.v(282) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 282
-Warning (10034): Output port "LCD_ON" at DE2_115_CAMERA.v(283) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 283
-Warning (10034): Output port "LCD_RS" at DE2_115_CAMERA.v(284) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 284
-Warning (10034): Output port "LCD_RW" at DE2_115_CAMERA.v(285) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 285
-Warning (10034): Output port "UART_CTS" at DE2_115_CAMERA.v(288) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 288
-Warning (10034): Output port "SD_CLK" at DE2_115_CAMERA.v(300) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 300
-Warning (10034): Output port "AUD_DACDAT" at DE2_115_CAMERA.v(319) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 319
-Warning (10034): Output port "AUD_XCK" at DE2_115_CAMERA.v(321) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 321
-Warning (10034): Output port "EEP_I2C_SCLK" at DE2_115_CAMERA.v(324) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 324
-Warning (10034): Output port "I2C_SCLK" at DE2_115_CAMERA.v(328) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 328
-Warning (10034): Output port "ENET0_GTX_CLK" at DE2_115_CAMERA.v(332) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 332
-Warning (10034): Output port "ENET0_MDC" at DE2_115_CAMERA.v(335) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 335
-Warning (10034): Output port "ENET0_RST_N" at DE2_115_CAMERA.v(337) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 337
-Warning (10034): Output port "ENET0_TX_EN" at DE2_115_CAMERA.v(346) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 346
-Warning (10034): Output port "ENET0_TX_ER" at DE2_115_CAMERA.v(347) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 347
-Warning (10034): Output port "ENET1_GTX_CLK" at DE2_115_CAMERA.v(351) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 351
-Warning (10034): Output port "ENET1_MDC" at DE2_115_CAMERA.v(354) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 354
-Warning (10034): Output port "ENET1_RST_N" at DE2_115_CAMERA.v(356) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 356
-Warning (10034): Output port "ENET1_TX_EN" at DE2_115_CAMERA.v(365) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 365
-Warning (10034): Output port "ENET1_TX_ER" at DE2_115_CAMERA.v(366) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 366
-Warning (10034): Output port "TD_RESET_N" at DE2_115_CAMERA.v(372) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 372
-Warning (10034): Output port "OTG_CS_N" at DE2_115_CAMERA.v(377) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 377
-Warning (10034): Output port "OTG_RD_N" at DE2_115_CAMERA.v(384) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 384
-Warning (10034): Output port "OTG_RST_N" at DE2_115_CAMERA.v(385) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 385
-Warning (10034): Output port "OTG_WE_N" at DE2_115_CAMERA.v(386) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 386
-Warning (10034): Output port "SRAM_CE_N" at DE2_115_CAMERA.v(405) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 405
-Warning (10034): Output port "SRAM_LB_N" at DE2_115_CAMERA.v(407) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 407
-Warning (10034): Output port "SRAM_OE_N" at DE2_115_CAMERA.v(408) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 408
-Warning (10034): Output port "SRAM_UB_N" at DE2_115_CAMERA.v(409) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 409
-Warning (10034): Output port "SRAM_WE_N" at DE2_115_CAMERA.v(410) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 410
-Warning (10034): Output port "FL_CE_N" at DE2_115_CAMERA.v(414) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 414
-Warning (10034): Output port "FL_OE_N" at DE2_115_CAMERA.v(416) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 416
-Warning (10034): Output port "FL_RST_N" at DE2_115_CAMERA.v(417) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 417
-Warning (10034): Output port "FL_WE_N" at DE2_115_CAMERA.v(419) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 419
-Warning (10034): Output port "FL_WP_N" at DE2_115_CAMERA.v(420) has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 420
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:u2" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 504
-Info (12128): Elaborating entity "CCD_Capture" for hierarchy "CCD_Capture:u3" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 518
-Warning (10036): Verilog HDL or VHDL warning at CCD_Capture.v(166): object "ifval_fedge" assigned a value but never read File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 166
-Warning (10036): Verilog HDL or VHDL warning at CCD_Capture.v(167): object "y_cnt_d" assigned a value but never read File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 167
-Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(127): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 127
-Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(131): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 131
-Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(187): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/CCD_Capture.v Line: 187
-Info (12128): Elaborating entity "RAW2RGB" for hierarchy "RAW2RGB:u4" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 531
-Info (12128): Elaborating entity "Line_Buffer1" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/RAW2RGB.v Line: 84
-Info (12128): Elaborating entity "altshift_taps" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer1.v Line: 81
-Info (12130): Elaborated megafunction instantiation "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer1.v Line: 81
-Info (12133): Instantiated megafunction "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" with the following parameter: File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/Line_Buffer1.v Line: 81
+Warning (10230): Verilog HDL assignment warning at DE2_115_CAMERA.v(478): truncated value with size 16 to match size of target (9) File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 478
+Warning (10034): Output port "ENET0_TX_DATA" at DE2_115_CAMERA.v(345) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 345
+Warning (10034): Output port "ENET1_TX_DATA" at DE2_115_CAMERA.v(364) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 364
+Warning (10034): Output port "OTG_ADDR" at DE2_115_CAMERA.v(376) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 376
+Warning (10034): Output port "OTG_DACK_N" at DE2_115_CAMERA.v(378) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 378
+Warning (10034): Output port "SRAM_ADDR" at DE2_115_CAMERA.v(404) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+Warning (10034): Output port "FL_ADDR" at DE2_115_CAMERA.v(413) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+Warning (10034): Output port "SMA_CLKOUT" at DE2_115_CAMERA.v(254) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 254
+Warning (10034): Output port "LCD_BLON" at DE2_115_CAMERA.v(280) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 280
+Warning (10034): Output port "LCD_EN" at DE2_115_CAMERA.v(282) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 282
+Warning (10034): Output port "LCD_ON" at DE2_115_CAMERA.v(283) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 283
+Warning (10034): Output port "LCD_RS" at DE2_115_CAMERA.v(284) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 284
+Warning (10034): Output port "LCD_RW" at DE2_115_CAMERA.v(285) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 285
+Warning (10034): Output port "UART_CTS" at DE2_115_CAMERA.v(288) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 288
+Warning (10034): Output port "SD_CLK" at DE2_115_CAMERA.v(300) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 300
+Warning (10034): Output port "AUD_DACDAT" at DE2_115_CAMERA.v(319) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 319
+Warning (10034): Output port "AUD_XCK" at DE2_115_CAMERA.v(321) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 321
+Warning (10034): Output port "EEP_I2C_SCLK" at DE2_115_CAMERA.v(324) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 324
+Warning (10034): Output port "I2C_SCLK" at DE2_115_CAMERA.v(328) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 328
+Warning (10034): Output port "ENET0_GTX_CLK" at DE2_115_CAMERA.v(332) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 332
+Warning (10034): Output port "ENET0_MDC" at DE2_115_CAMERA.v(335) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 335
+Warning (10034): Output port "ENET0_RST_N" at DE2_115_CAMERA.v(337) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 337
+Warning (10034): Output port "ENET0_TX_EN" at DE2_115_CAMERA.v(346) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 346
+Warning (10034): Output port "ENET0_TX_ER" at DE2_115_CAMERA.v(347) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 347
+Warning (10034): Output port "ENET1_GTX_CLK" at DE2_115_CAMERA.v(351) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 351
+Warning (10034): Output port "ENET1_MDC" at DE2_115_CAMERA.v(354) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 354
+Warning (10034): Output port "ENET1_RST_N" at DE2_115_CAMERA.v(356) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 356
+Warning (10034): Output port "ENET1_TX_EN" at DE2_115_CAMERA.v(365) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 365
+Warning (10034): Output port "ENET1_TX_ER" at DE2_115_CAMERA.v(366) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 366
+Warning (10034): Output port "TD_RESET_N" at DE2_115_CAMERA.v(372) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 372
+Warning (10034): Output port "OTG_CS_N" at DE2_115_CAMERA.v(377) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 377
+Warning (10034): Output port "OTG_RD_N" at DE2_115_CAMERA.v(384) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 384
+Warning (10034): Output port "OTG_RST_N" at DE2_115_CAMERA.v(385) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 385
+Warning (10034): Output port "OTG_WE_N" at DE2_115_CAMERA.v(386) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 386
+Warning (10034): Output port "SRAM_CE_N" at DE2_115_CAMERA.v(405) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 405
+Warning (10034): Output port "SRAM_LB_N" at DE2_115_CAMERA.v(407) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 407
+Warning (10034): Output port "SRAM_OE_N" at DE2_115_CAMERA.v(408) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 408
+Warning (10034): Output port "SRAM_UB_N" at DE2_115_CAMERA.v(409) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 409
+Warning (10034): Output port "SRAM_WE_N" at DE2_115_CAMERA.v(410) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 410
+Warning (10034): Output port "FL_CE_N" at DE2_115_CAMERA.v(414) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 414
+Warning (10034): Output port "FL_OE_N" at DE2_115_CAMERA.v(416) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 416
+Warning (10034): Output port "FL_RST_N" at DE2_115_CAMERA.v(417) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 417
+Warning (10034): Output port "FL_WE_N" at DE2_115_CAMERA.v(419) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 419
+Warning (10034): Output port "FL_WP_N" at DE2_115_CAMERA.v(420) has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 420
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:u2" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 504
+Info (12128): Elaborating entity "CCD_Capture" for hierarchy "CCD_Capture:u3" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 518
+Warning (10036): Verilog HDL or VHDL warning at CCD_Capture.v(166): object "ifval_fedge" assigned a value but never read File: C:/Facial-Recognition/v/CCD_Capture.v Line: 166
+Warning (10036): Verilog HDL or VHDL warning at CCD_Capture.v(167): object "y_cnt_d" assigned a value but never read File: C:/Facial-Recognition/v/CCD_Capture.v Line: 167
+Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(127): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/v/CCD_Capture.v Line: 127
+Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(131): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/v/CCD_Capture.v Line: 131
+Warning (10230): Verilog HDL assignment warning at CCD_Capture.v(187): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/CCD_Capture.v Line: 187
+Info (12128): Elaborating entity "RAW2RGB" for hierarchy "RAW2RGB:u4" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 531
+Info (12128): Elaborating entity "Line_Buffer1" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0" File: C:/Facial-Recognition/v/RAW2RGB.v Line: 84
+Info (12128): Elaborating entity "altshift_taps" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" File: C:/Facial-Recognition/v/Line_Buffer1.v Line: 81
+Info (12130): Elaborated megafunction instantiation "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" File: C:/Facial-Recognition/v/Line_Buffer1.v Line: 81
+Info (12133): Instantiated megafunction "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component" with the following parameter: File: C:/Facial-Recognition/v/Line_Buffer1.v Line: 81
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=M9K"
     Info (12134): Parameter "lpm_type" = "altshift_taps"
@@ -2209,23 +2209,23 @@ Info (12133): Instantiated megafunction "RAW2RGB:u4|Line_Buffer1:u0|altshift_tap
     Info (12134): Parameter "tap_distance" = "1280"
     Info (12134): Parameter "width" = "12"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_3uv.tdf
-    Info (12023): Found entity 1: shift_taps_3uv File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/shift_taps_3uv.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_3uv File: C:/Facial-Recognition/db/shift_taps_3uv.tdf Line: 26
 Info (12128): Elaborating entity "shift_taps_3uv" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift_taps.tdf Line: 103
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rma1.tdf
-    Info (12023): Found entity 1: altsyncram_rma1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_rma1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_rma1" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|altsyncram_rma1:altsyncram2" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/shift_taps_3uv.tdf Line: 35
+    Info (12023): Found entity 1: altsyncram_rma1 File: C:/Facial-Recognition/db/altsyncram_rma1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_rma1" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|altsyncram_rma1:altsyncram2" File: C:/Facial-Recognition/db/shift_taps_3uv.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_lvf.tdf
-    Info (12023): Found entity 1: cntr_lvf File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cntr_lvf.tdf Line: 27
-Info (12128): Elaborating entity "cntr_lvf" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|cntr_lvf:cntr1" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/shift_taps_3uv.tdf Line: 36
+    Info (12023): Found entity 1: cntr_lvf File: C:/Facial-Recognition/db/cntr_lvf.tdf Line: 27
+Info (12128): Elaborating entity "cntr_lvf" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|cntr_lvf:cntr1" File: C:/Facial-Recognition/db/shift_taps_3uv.tdf Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_8ic.tdf
-    Info (12023): Found entity 1: cmpr_8ic File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cmpr_8ic.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_8ic" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|cntr_lvf:cntr1|cmpr_8ic:cmpr4" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cntr_lvf.tdf Line: 90
-Info (12128): Elaborating entity "SEG7_LUT_8" for hierarchy "SEG7_LUT_8:u5" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 552
-Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT_8:u5|SEG7_LUT:u0" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/SEG7_LUT_8.v Line: 47
-Info (12128): Elaborating entity "sdram_pll" for hierarchy "sdram_pll:u6" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 564
-Info (12128): Elaborating entity "altpll" for hierarchy "sdram_pll:u6|altpll:altpll_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/sdram_pll.v Line: 107
-Info (12130): Elaborated megafunction instantiation "sdram_pll:u6|altpll:altpll_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/sdram_pll.v Line: 107
-Info (12133): Instantiated megafunction "sdram_pll:u6|altpll:altpll_component" with the following parameter: File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/sdram_pll.v Line: 107
+    Info (12023): Found entity 1: cmpr_8ic File: C:/Facial-Recognition/db/cmpr_8ic.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_8ic" for hierarchy "RAW2RGB:u4|Line_Buffer1:u0|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_3uv:auto_generated|cntr_lvf:cntr1|cmpr_8ic:cmpr4" File: C:/Facial-Recognition/db/cntr_lvf.tdf Line: 90
+Info (12128): Elaborating entity "SEG7_LUT_8" for hierarchy "SEG7_LUT_8:u5" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 552
+Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT_8:u5|SEG7_LUT:u0" File: C:/Facial-Recognition/v/SEG7_LUT_8.v Line: 47
+Info (12128): Elaborating entity "sdram_pll" for hierarchy "sdram_pll:u6" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 564
+Info (12128): Elaborating entity "altpll" for hierarchy "sdram_pll:u6|altpll:altpll_component" File: C:/Facial-Recognition/v/sdram_pll.v Line: 107
+Info (12130): Elaborated megafunction instantiation "sdram_pll:u6|altpll:altpll_component" File: C:/Facial-Recognition/v/sdram_pll.v Line: 107
+Info (12133): Instantiated megafunction "sdram_pll:u6|altpll:altpll_component" with the following parameter: File: C:/Facial-Recognition/v/sdram_pll.v Line: 107
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -2296,156 +2296,156 @@ Info (12133): Instantiated megafunction "sdram_pll:u6|altpll:altpll_component" w
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_f423.tdf
-    Info (12023): Found entity 1: altpll_f423 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 25
+    Info (12023): Found entity 1: altpll_f423 File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 25
 Info (12128): Elaborating entity "altpll_f423" for hierarchy "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "Sdram_Control" for hierarchy "Sdram_Control:u7" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 637
-Warning (10230): Verilog HDL assignment warning at Sdram_Control.v(385): truncated value with size 32 to match size of target (10) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 385
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR1_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR2_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD1_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD2_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR1_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR2_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD1_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD2_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_LENGTH[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_LENGTH[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_LENGTH[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_LENGTH[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD2_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rRD1_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR2_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (10041): Inferred latch for "rWR1_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 423
-Info (12128): Elaborating entity "control_interface" for hierarchy "Sdram_Control:u7|control_interface:u_control_interface" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 239
-Warning (10230): Verilog HDL assignment warning at control_interface.v(162): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/control_interface.v Line: 162
-Warning (10230): Verilog HDL assignment warning at control_interface.v(167): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/control_interface.v Line: 167
-Warning (10230): Verilog HDL assignment warning at control_interface.v(192): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/control_interface.v Line: 192
-Info (12128): Elaborating entity "command" for hierarchy "Sdram_Control:u7|command:u_command" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 264
-Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe_shift", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/command.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe1", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/command.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe2", which holds its previous value in one or more paths through the always construct File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/command.v Line: 275
-Info (12128): Elaborating entity "sdr_data_path" for hierarchy "Sdram_Control:u7|sdr_data_path:u_sdr_data_path" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 272
-Warning (10230): Verilog HDL assignment warning at sdr_data_path.v(68): truncated value with size 32 to match size of target (4) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/sdr_data_path.v Line: 68
-Info (12128): Elaborating entity "Sdram_WR_FIFO" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 282
-Info (12128): Elaborating entity "dcfifo_mixed_widths" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_WR_FIFO.v Line: 87
-Info (12130): Elaborated megafunction instantiation "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_WR_FIFO.v Line: 87
-Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" with the following parameter: File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_WR_FIFO.v Line: 87
+Info (12128): Elaborating entity "Sdram_Control" for hierarchy "Sdram_Control:u7" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 637
+Warning (10230): Verilog HDL assignment warning at Sdram_Control.v(385): truncated value with size 32 to match size of target (10) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 385
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR1_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR2_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD1_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD2_MAX_ADDR", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR1_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rWR2_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD1_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Warning (10240): Verilog HDL Always Construct warning at Sdram_Control.v(423): inferring latch(es) for variable "rRD2_LENGTH", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_LENGTH[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_LENGTH[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_LENGTH[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_LENGTH[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD2_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rRD1_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR2_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[0]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[1]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[2]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[3]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[4]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[5]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[6]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[7]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[8]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[9]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[10]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[11]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[12]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[13]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[14]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[15]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[16]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[17]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[18]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[19]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[20]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[21]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (10041): Inferred latch for "rWR1_MAX_ADDR[22]" at Sdram_Control.v(423) File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 423
+Info (12128): Elaborating entity "control_interface" for hierarchy "Sdram_Control:u7|control_interface:u_control_interface" File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 239
+Warning (10230): Verilog HDL assignment warning at control_interface.v(162): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/Sdram_Control/control_interface.v Line: 162
+Warning (10230): Verilog HDL assignment warning at control_interface.v(167): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/Sdram_Control/control_interface.v Line: 167
+Warning (10230): Verilog HDL assignment warning at control_interface.v(192): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/Sdram_Control/control_interface.v Line: 192
+Info (12128): Elaborating entity "command" for hierarchy "Sdram_Control:u7|command:u_command" File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 264
+Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe_shift", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/command.v Line: 275
+Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe1", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/command.v Line: 275
+Warning (10240): Verilog HDL Always Construct warning at command.v(275): inferring latch(es) for variable "oe2", which holds its previous value in one or more paths through the always construct File: C:/Facial-Recognition/Sdram_Control/command.v Line: 275
+Info (12128): Elaborating entity "sdr_data_path" for hierarchy "Sdram_Control:u7|sdr_data_path:u_sdr_data_path" File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 272
+Warning (10230): Verilog HDL assignment warning at sdr_data_path.v(68): truncated value with size 32 to match size of target (4) File: C:/Facial-Recognition/Sdram_Control/sdr_data_path.v Line: 68
+Info (12128): Elaborating entity "Sdram_WR_FIFO" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo" File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 282
+Info (12128): Elaborating entity "dcfifo_mixed_widths" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/Facial-Recognition/Sdram_Control/Sdram_WR_FIFO.v Line: 87
+Info (12130): Elaborated megafunction instantiation "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/Facial-Recognition/Sdram_Control/Sdram_WR_FIFO.v Line: 87
+Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" with the following parameter: File: C:/Facial-Recognition/Sdram_Control/Sdram_WR_FIFO.v Line: 87
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_numwords" = "512"
     Info (12134): Parameter "lpm_showahead" = "OFF"
@@ -2461,45 +2461,45 @@ Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_WR_FIFO:u_write1
     Info (12134): Parameter "write_aclr_synch" = "OFF"
     Info (12134): Parameter "wrsync_delaypipe" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/dcfifo_lhh1.tdf
-    Info (12023): Found entity 1: dcfifo_lhh1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 42
+    Info (12023): Found entity 1: dcfifo_lhh1 File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 42
 Info (12128): Elaborating entity "dcfifo_lhh1" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_gray2bin_ugb.tdf
-    Info (12023): Found entity 1: a_gray2bin_ugb File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_gray2bin_ugb.tdf Line: 22
-Info (12128): Elaborating entity "a_gray2bin_ugb" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_gray2bin_ugb:rdptr_g_gray2bin" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 54
+    Info (12023): Found entity 1: a_gray2bin_ugb File: C:/Facial-Recognition/db/a_gray2bin_ugb.tdf Line: 22
+Info (12128): Elaborating entity "a_gray2bin_ugb" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_gray2bin_ugb:rdptr_g_gray2bin" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 54
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_t57.tdf
-    Info (12023): Found entity 1: a_graycounter_t57 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_t57.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_t57" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_graycounter_t57:rdptr_g1p" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 56
+    Info (12023): Found entity 1: a_graycounter_t57 File: C:/Facial-Recognition/db/a_graycounter_t57.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_t57" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_graycounter_t57:rdptr_g1p" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_ojc.tdf
-    Info (12023): Found entity 1: a_graycounter_ojc File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_ojc.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_ojc" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_graycounter_ojc:wrptr_g1p" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 57
+    Info (12023): Found entity 1: a_graycounter_ojc File: C:/Facial-Recognition/db/a_graycounter_ojc.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_ojc" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|a_graycounter_ojc:wrptr_g1p" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rj31.tdf
-    Info (12023): Found entity 1: altsyncram_rj31 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_rj31.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_rj31" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|altsyncram_rj31:fifo_ram" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 58
+    Info (12023): Found entity 1: altsyncram_rj31 File: C:/Facial-Recognition/db/altsyncram_rj31.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_rj31" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|altsyncram_rj31:fifo_ram" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_gd9.tdf
-    Info (12023): Found entity 1: dffpipe_gd9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_gd9.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_gd9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 62
+    Info (12023): Found entity 1: dffpipe_gd9 File: C:/Facial-Recognition/db/dffpipe_gd9.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_gd9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 62
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_0ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_0ol File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_0ol.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_0ol" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_0ol:rs_dgwp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 64
+    Info (12023): Found entity 1: alt_synch_pipe_0ol File: C:/Facial-Recognition/db/alt_synch_pipe_0ol.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_0ol" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_0ol:rs_dgwp" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 64
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_hd9.tdf
-    Info (12023): Found entity 1: dffpipe_hd9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_hd9.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_hd9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe13" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_0ol.tdf Line: 34
+    Info (12023): Found entity 1: dffpipe_hd9 File: C:/Facial-Recognition/db/dffpipe_hd9.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_hd9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe13" File: C:/Facial-Recognition/db/alt_synch_pipe_0ol.tdf Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_1ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_1ol File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_1ol.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_1ol" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_1ol:ws_dgrp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 65
+    Info (12023): Found entity 1: alt_synch_pipe_1ol File: C:/Facial-Recognition/db/alt_synch_pipe_1ol.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_1ol" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_1ol:ws_dgrp" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 65
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_id9.tdf
-    Info (12023): Found entity 1: dffpipe_id9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_id9.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_id9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe16" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_1ol.tdf Line: 34
+    Info (12023): Found entity 1: dffpipe_id9 File: C:/Facial-Recognition/db/dffpipe_id9.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_id9" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe16" File: C:/Facial-Recognition/db/alt_synch_pipe_1ol.tdf Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_f66.tdf
-    Info (12023): Found entity 1: cmpr_f66 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cmpr_f66.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_f66" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|cmpr_f66:rdempty_eq_comp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 69
+    Info (12023): Found entity 1: cmpr_f66 File: C:/Facial-Recognition/db/cmpr_f66.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_f66" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|cmpr_f66:rdempty_eq_comp" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 69
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_54e.tdf
-    Info (12023): Found entity 1: cntr_54e File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/cntr_54e.tdf Line: 25
-Info (12128): Elaborating entity "cntr_54e" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|cntr_54e:cntr_b" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_lhh1.tdf Line: 71
-Info (12128): Elaborating entity "Sdram_RD_FIFO" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_Control.v Line: 302
-Info (12128): Elaborating entity "dcfifo_mixed_widths" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_RD_FIFO.v Line: 87
-Info (12130): Elaborated megafunction instantiation "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_RD_FIFO.v Line: 87
-Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" with the following parameter: File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/Sdram_Control/Sdram_RD_FIFO.v Line: 87
+    Info (12023): Found entity 1: cntr_54e File: C:/Facial-Recognition/db/cntr_54e.tdf Line: 25
+Info (12128): Elaborating entity "cntr_54e" for hierarchy "Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|cntr_54e:cntr_b" File: C:/Facial-Recognition/db/dcfifo_lhh1.tdf Line: 71
+Info (12128): Elaborating entity "Sdram_RD_FIFO" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo" File: C:/Facial-Recognition/Sdram_Control/Sdram_Control.v Line: 302
+Info (12128): Elaborating entity "dcfifo_mixed_widths" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v Line: 87
+Info (12130): Elaborated megafunction instantiation "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" File: C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v Line: 87
+Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" with the following parameter: File: C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v Line: 87
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_numwords" = "256"
     Info (12134): Parameter "lpm_showahead" = "OFF"
@@ -2515,285 +2515,285 @@ Info (12133): Instantiated megafunction "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_
     Info (12134): Parameter "write_aclr_synch" = "OFF"
     Info (12134): Parameter "wrsync_delaypipe" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/dcfifo_dih1.tdf
-    Info (12023): Found entity 1: dcfifo_dih1 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 42
+    Info (12023): Found entity 1: dcfifo_dih1 File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 42
 Info (12128): Elaborating entity "dcfifo_dih1" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_s57.tdf
-    Info (12023): Found entity 1: a_graycounter_s57 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_s57.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_s57" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|a_graycounter_s57:rdptr_g1p" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 56
+    Info (12023): Found entity 1: a_graycounter_s57 File: C:/Facial-Recognition/db/a_graycounter_s57.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_s57" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|a_graycounter_s57:rdptr_g1p" File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_pjc.tdf
-    Info (12023): Found entity 1: a_graycounter_pjc File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/a_graycounter_pjc.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_pjc" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|a_graycounter_pjc:wrptr_g1p" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 57
+    Info (12023): Found entity 1: a_graycounter_pjc File: C:/Facial-Recognition/db/a_graycounter_pjc.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_pjc" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|a_graycounter_pjc:wrptr_g1p" File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sj31.tdf
-    Info (12023): Found entity 1: altsyncram_sj31 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_sj31" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 58
+    Info (12023): Found entity 1: altsyncram_sj31 File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_sj31" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram" File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_2ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_2ol File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_2ol.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_2ol" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_2ol:rs_dgwp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 63
+    Info (12023): Found entity 1: alt_synch_pipe_2ol File: C:/Facial-Recognition/db/alt_synch_pipe_2ol.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_2ol" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_2ol:rs_dgwp" File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 63
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_jd9.tdf
-    Info (12023): Found entity 1: dffpipe_jd9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_jd9.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_jd9" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_2ol:rs_dgwp|dffpipe_jd9:dffpipe12" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_2ol.tdf Line: 34
+    Info (12023): Found entity 1: dffpipe_jd9 File: C:/Facial-Recognition/db/dffpipe_jd9.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_jd9" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_2ol:rs_dgwp|dffpipe_jd9:dffpipe12" File: C:/Facial-Recognition/db/alt_synch_pipe_2ol.tdf Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_3ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_3ol File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_3ol.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_3ol" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_3ol:ws_dgrp" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dcfifo_dih1.tdf Line: 66
+    Info (12023): Found entity 1: alt_synch_pipe_3ol File: C:/Facial-Recognition/db/alt_synch_pipe_3ol.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_3ol" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_3ol:ws_dgrp" File: C:/Facial-Recognition/db/dcfifo_dih1.tdf Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_kd9.tdf
-    Info (12023): Found entity 1: dffpipe_kd9 File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/dffpipe_kd9.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_kd9" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_3ol:ws_dgrp|dffpipe_kd9:dffpipe15" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/alt_synch_pipe_3ol.tdf Line: 34
-Info (12128): Elaborating entity "I2C_CCD_Config" for hierarchy "I2C_CCD_Config:u8" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 648
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(126): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 126
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(127): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 127
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(149): truncated value with size 32 to match size of target (25) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 149
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(154): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 154
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(179): truncated value with size 32 to match size of target (16) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 179
-Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(229): truncated value with size 32 to match size of target (6) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 229
-Info (12128): Elaborating entity "I2C_Controller" for hierarchy "I2C_CCD_Config:u8|I2C_Controller:u0" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_CCD_Config.v Line: 196
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(71): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 71
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(70): truncated value with size 32 to match size of target (1) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 70
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(83): truncated value with size 32 to match size of target (7) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 83
-Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:u1" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 667
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(138): truncated value with size 32 to match size of target (10) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 138
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(141): truncated value with size 32 to match size of target (10) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 141
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(144): truncated value with size 32 to match size of target (10) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 144
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(201): truncated value with size 32 to match size of target (13) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 201
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(227): truncated value with size 32 to match size of target (13) File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/VGA_Controller.v Line: 227
+    Info (12023): Found entity 1: dffpipe_kd9 File: C:/Facial-Recognition/db/dffpipe_kd9.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_kd9" for hierarchy "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|alt_synch_pipe_3ol:ws_dgrp|dffpipe_kd9:dffpipe15" File: C:/Facial-Recognition/db/alt_synch_pipe_3ol.tdf Line: 34
+Info (12128): Elaborating entity "I2C_CCD_Config" for hierarchy "I2C_CCD_Config:u8" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 648
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(126): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 126
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(127): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 127
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(149): truncated value with size 32 to match size of target (25) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 149
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(154): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 154
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(179): truncated value with size 32 to match size of target (16) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 179
+Warning (10230): Verilog HDL assignment warning at I2C_CCD_Config.v(229): truncated value with size 32 to match size of target (6) File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 229
+Info (12128): Elaborating entity "I2C_Controller" for hierarchy "I2C_CCD_Config:u8|I2C_Controller:u0" File: C:/Facial-Recognition/v/I2C_CCD_Config.v Line: 196
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(71): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/I2C_Controller.v Line: 71
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(70): truncated value with size 32 to match size of target (1) File: C:/Facial-Recognition/v/I2C_Controller.v Line: 70
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(83): truncated value with size 32 to match size of target (7) File: C:/Facial-Recognition/v/I2C_Controller.v Line: 83
+Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:u1" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 667
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(138): truncated value with size 32 to match size of target (10) File: C:/Facial-Recognition/v/VGA_Controller.v Line: 138
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(141): truncated value with size 32 to match size of target (10) File: C:/Facial-Recognition/v/VGA_Controller.v Line: 141
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(144): truncated value with size 32 to match size of target (10) File: C:/Facial-Recognition/v/VGA_Controller.v Line: 144
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(201): truncated value with size 32 to match size of target (13) File: C:/Facial-Recognition/v/VGA_Controller.v Line: 201
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(227): truncated value with size 32 to match size of target (13) File: C:/Facial-Recognition/v/VGA_Controller.v Line: 227
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 41
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 75
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[10]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 381
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[11]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 415
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[15]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 551
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 41
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 75
-        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[15]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altsyncram_sj31.tdf Line: 551
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[0]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 41
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[1]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 75
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[10]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 381
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[11]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 415
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[15]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 551
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[0]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 41
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[1]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 75
+        Warning (14320): Synthesized away node "Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[15]" File: C:/Facial-Recognition/db/altsyncram_sj31.tdf Line: 551
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "EX_IO[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[4]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[5]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "EX_IO[6]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 264
-    Warning (13040): bidirectional pin "LCD_DATA[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[4]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[5]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[6]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "LCD_DATA[7]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 281
-    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 294
-    Warning (13040): bidirectional pin "PS2_CLK2" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 295
-    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 296
-    Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 297
-    Warning (13040): bidirectional pin "SD_CMD" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 301
-    Warning (13040): bidirectional pin "SD_DAT[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Warning (13040): bidirectional pin "SD_DAT[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Warning (13040): bidirectional pin "SD_DAT[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Warning (13040): bidirectional pin "SD_DAT[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 302
-    Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 317
-    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 318
-    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 320
-    Warning (13040): bidirectional pin "EEP_I2C_SDAT" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 325
-    Warning (13040): bidirectional pin "I2C_SDAT" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 329
-    Warning (13040): bidirectional pin "ENET0_MDIO" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 336
-    Warning (13040): bidirectional pin "ENET1_MDIO" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 355
-    Warning (13040): bidirectional pin "OTG_DATA[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[4]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[5]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[6]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[7]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[8]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[9]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[10]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[11]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[12]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[13]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[14]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_DATA[15]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 379
-    Warning (13040): bidirectional pin "OTG_FSPEED" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 381
-    Warning (13040): bidirectional pin "OTG_LSPEED" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 383
-    Warning (13040): bidirectional pin "SRAM_DQ[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[4]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[5]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[6]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[7]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[8]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[9]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[10]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[11]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[12]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[13]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[14]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "SRAM_DQ[15]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 406
-    Warning (13040): bidirectional pin "FL_DQ[0]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[1]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[2]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[3]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[4]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[5]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[6]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-    Warning (13040): bidirectional pin "FL_DQ[7]" has no driver File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 415
-Info (13000): Registers with preset signals will power-up high File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/v/I2C_Controller.v Line: 65
+    Warning (13040): bidirectional pin "EX_IO[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[4]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[5]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "EX_IO[6]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 264
+    Warning (13040): bidirectional pin "LCD_DATA[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[4]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[5]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[6]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "LCD_DATA[7]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 281
+    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 294
+    Warning (13040): bidirectional pin "PS2_CLK2" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 295
+    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 296
+    Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 297
+    Warning (13040): bidirectional pin "SD_CMD" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 301
+    Warning (13040): bidirectional pin "SD_DAT[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Warning (13040): bidirectional pin "SD_DAT[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Warning (13040): bidirectional pin "SD_DAT[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Warning (13040): bidirectional pin "SD_DAT[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 302
+    Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 317
+    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 318
+    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 320
+    Warning (13040): bidirectional pin "EEP_I2C_SDAT" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 325
+    Warning (13040): bidirectional pin "I2C_SDAT" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 329
+    Warning (13040): bidirectional pin "ENET0_MDIO" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 336
+    Warning (13040): bidirectional pin "ENET1_MDIO" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 355
+    Warning (13040): bidirectional pin "OTG_DATA[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[4]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[5]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[6]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[7]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[8]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[9]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[10]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[11]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[12]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[13]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[14]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_DATA[15]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 379
+    Warning (13040): bidirectional pin "OTG_FSPEED" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 381
+    Warning (13040): bidirectional pin "OTG_LSPEED" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 383
+    Warning (13040): bidirectional pin "SRAM_DQ[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[4]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[5]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[6]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[7]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[8]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[9]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[10]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[11]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[12]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[13]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[14]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "SRAM_DQ[15]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 406
+    Warning (13040): bidirectional pin "FL_DQ[0]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[1]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[2]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[3]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[4]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[5]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[6]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+    Warning (13040): bidirectional pin "FL_DQ[7]" has no driver File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 415
+Info (13000): Registers with preset signals will power-up high File: C:/Facial-Recognition/v/I2C_Controller.v Line: 65
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "SMA_CLKOUT" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 254
-    Warning (13410): Pin "LCD_BLON" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 280
-    Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 282
-    Warning (13410): Pin "LCD_ON" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 283
-    Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 284
-    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 285
-    Warning (13410): Pin "UART_CTS" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 288
-    Warning (13410): Pin "SD_CLK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 300
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 312
-    Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 319
-    Warning (13410): Pin "AUD_XCK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 321
-    Warning (13410): Pin "EEP_I2C_SCLK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 324
-    Warning (13410): Pin "I2C_SCLK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 328
-    Warning (13410): Pin "ENET0_GTX_CLK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 332
-    Warning (13410): Pin "ENET0_MDC" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 335
-    Warning (13410): Pin "ENET0_RST_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 337
-    Warning (13410): Pin "ENET0_TX_DATA[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 345
-    Warning (13410): Pin "ENET0_TX_DATA[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 345
-    Warning (13410): Pin "ENET0_TX_DATA[2]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 345
-    Warning (13410): Pin "ENET0_TX_DATA[3]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 345
-    Warning (13410): Pin "ENET0_TX_EN" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 346
-    Warning (13410): Pin "ENET0_TX_ER" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 347
-    Warning (13410): Pin "ENET1_GTX_CLK" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 351
-    Warning (13410): Pin "ENET1_MDC" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 354
-    Warning (13410): Pin "ENET1_RST_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 356
-    Warning (13410): Pin "ENET1_TX_DATA[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 364
-    Warning (13410): Pin "ENET1_TX_DATA[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 364
-    Warning (13410): Pin "ENET1_TX_DATA[2]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 364
-    Warning (13410): Pin "ENET1_TX_DATA[3]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 364
-    Warning (13410): Pin "ENET1_TX_EN" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 365
-    Warning (13410): Pin "ENET1_TX_ER" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 366
-    Warning (13410): Pin "TD_RESET_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 372
-    Warning (13410): Pin "OTG_ADDR[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 376
-    Warning (13410): Pin "OTG_ADDR[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 376
-    Warning (13410): Pin "OTG_CS_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 377
-    Warning (13410): Pin "OTG_DACK_N[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 378
-    Warning (13410): Pin "OTG_DACK_N[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 378
-    Warning (13410): Pin "OTG_RD_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 384
-    Warning (13410): Pin "OTG_RST_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 385
-    Warning (13410): Pin "OTG_WE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 386
-    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 392
-    Warning (13410): Pin "SRAM_ADDR[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[2]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[3]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[4]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[5]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[6]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[7]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[8]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[9]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[10]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[11]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[12]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[13]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[14]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[15]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[16]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[17]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[18]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_ADDR[19]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 404
-    Warning (13410): Pin "SRAM_CE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 405
-    Warning (13410): Pin "SRAM_LB_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 407
-    Warning (13410): Pin "SRAM_OE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 408
-    Warning (13410): Pin "SRAM_UB_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 409
-    Warning (13410): Pin "SRAM_WE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 410
-    Warning (13410): Pin "FL_ADDR[0]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[1]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[2]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[3]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[4]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[5]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[6]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[7]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[8]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[9]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[10]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[11]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[12]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[13]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[14]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[15]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[16]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[17]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[18]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[19]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[20]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[21]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_ADDR[22]" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 413
-    Warning (13410): Pin "FL_CE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 414
-    Warning (13410): Pin "FL_OE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 416
-    Warning (13410): Pin "FL_RST_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 417
-    Warning (13410): Pin "FL_WE_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 419
-    Warning (13410): Pin "FL_WP_N" is stuck at GND File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 420
-    Warning (13410): Pin "D5M_TRIGGER" is stuck at VCC File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 431
+    Warning (13410): Pin "SMA_CLKOUT" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 254
+    Warning (13410): Pin "LCD_BLON" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 280
+    Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 282
+    Warning (13410): Pin "LCD_ON" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 283
+    Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 284
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 285
+    Warning (13410): Pin "UART_CTS" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 288
+    Warning (13410): Pin "SD_CLK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 300
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 312
+    Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 319
+    Warning (13410): Pin "AUD_XCK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 321
+    Warning (13410): Pin "EEP_I2C_SCLK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 324
+    Warning (13410): Pin "I2C_SCLK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 328
+    Warning (13410): Pin "ENET0_GTX_CLK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 332
+    Warning (13410): Pin "ENET0_MDC" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 335
+    Warning (13410): Pin "ENET0_RST_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 337
+    Warning (13410): Pin "ENET0_TX_DATA[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 345
+    Warning (13410): Pin "ENET0_TX_DATA[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 345
+    Warning (13410): Pin "ENET0_TX_DATA[2]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 345
+    Warning (13410): Pin "ENET0_TX_DATA[3]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 345
+    Warning (13410): Pin "ENET0_TX_EN" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 346
+    Warning (13410): Pin "ENET0_TX_ER" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 347
+    Warning (13410): Pin "ENET1_GTX_CLK" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 351
+    Warning (13410): Pin "ENET1_MDC" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 354
+    Warning (13410): Pin "ENET1_RST_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 356
+    Warning (13410): Pin "ENET1_TX_DATA[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 364
+    Warning (13410): Pin "ENET1_TX_DATA[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 364
+    Warning (13410): Pin "ENET1_TX_DATA[2]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 364
+    Warning (13410): Pin "ENET1_TX_DATA[3]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 364
+    Warning (13410): Pin "ENET1_TX_EN" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 365
+    Warning (13410): Pin "ENET1_TX_ER" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 366
+    Warning (13410): Pin "TD_RESET_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 372
+    Warning (13410): Pin "OTG_ADDR[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 376
+    Warning (13410): Pin "OTG_ADDR[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 376
+    Warning (13410): Pin "OTG_CS_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 377
+    Warning (13410): Pin "OTG_DACK_N[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 378
+    Warning (13410): Pin "OTG_DACK_N[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 378
+    Warning (13410): Pin "OTG_RD_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 384
+    Warning (13410): Pin "OTG_RST_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 385
+    Warning (13410): Pin "OTG_WE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 386
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 392
+    Warning (13410): Pin "SRAM_ADDR[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[2]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[3]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[4]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[5]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[6]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[7]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[8]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[9]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[10]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[11]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[12]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[13]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[14]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[15]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[16]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[17]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[18]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_ADDR[19]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 404
+    Warning (13410): Pin "SRAM_CE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 405
+    Warning (13410): Pin "SRAM_LB_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 407
+    Warning (13410): Pin "SRAM_OE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 408
+    Warning (13410): Pin "SRAM_UB_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 409
+    Warning (13410): Pin "SRAM_WE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 410
+    Warning (13410): Pin "FL_ADDR[0]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[1]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[2]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[3]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[4]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[5]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[6]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[7]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[8]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[9]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[10]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[11]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[12]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[13]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[14]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[15]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[16]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[17]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[18]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[19]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[20]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[21]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_ADDR[22]" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 413
+    Warning (13410): Pin "FL_CE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 414
+    Warning (13410): Pin "FL_OE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 416
+    Warning (13410): Pin "FL_RST_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 417
+    Warning (13410): Pin "FL_WE_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 419
+    Warning (13410): Pin "FL_WP_N" is stuck at GND File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 420
+    Warning (13410): Pin "D5M_TRIGGER" is stuck at VCC File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 431
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 23 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.map.smsg
+Info (144001): Generated suppressed messages file C:/Facial-Recognition/DE2_115_CAMERA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" has parameters clk4_multiply_by and clk4_divide_by specified but port CLK[4] is not connected File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/db/altpll_f423.tdf Line: 27
+Warning (15899): PLL "sdram_pll:u6|altpll:altpll_component|altpll_f423:auto_generated|pll1" has parameters clk4_multiply_by and clk4_divide_by specified but port CLK[4] is not connected File: C:/Facial-Recognition/db/altpll_f423.tdf Line: 27
 Warning (21074): Design contains 49 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 248
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 250
-    Warning (15610): No output dependent on input pin "SMA_CLKIN" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 253
-    Warning (15610): No output dependent on input pin "UART_RTS" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 289
-    Warning (15610): No output dependent on input pin "SD_WP_N" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 303
-    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 316
-    Warning (15610): No output dependent on input pin "ENET0_INT_N" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 333
-    Warning (15610): No output dependent on input pin "ENET0_LINK100" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 334
-    Warning (15610): No output dependent on input pin "ENET0_RX_CLK" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 338
-    Warning (15610): No output dependent on input pin "ENET0_RX_COL" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 339
-    Warning (15610): No output dependent on input pin "ENET0_RX_CRS" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 340
-    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 341
-    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 341
-    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[2]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 341
-    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[3]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 341
-    Warning (15610): No output dependent on input pin "ENET0_RX_DV" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 342
-    Warning (15610): No output dependent on input pin "ENET0_RX_ER" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 343
-    Warning (15610): No output dependent on input pin "ENET0_TX_CLK" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 344
-    Warning (15610): No output dependent on input pin "ENETCLK_25" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 348
-    Warning (15610): No output dependent on input pin "ENET1_INT_N" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 352
-    Warning (15610): No output dependent on input pin "ENET1_LINK100" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 353
-    Warning (15610): No output dependent on input pin "ENET1_RX_CLK" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 357
-    Warning (15610): No output dependent on input pin "ENET1_RX_COL" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 358
-    Warning (15610): No output dependent on input pin "ENET1_RX_CRS" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 359
-    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 360
-    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 360
-    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[2]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 360
-    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[3]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 360
-    Warning (15610): No output dependent on input pin "ENET1_RX_DV" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 361
-    Warning (15610): No output dependent on input pin "ENET1_RX_ER" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 362
-    Warning (15610): No output dependent on input pin "ENET1_TX_CLK" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 363
-    Warning (15610): No output dependent on input pin "TD_CLK27" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 369
-    Warning (15610): No output dependent on input pin "TD_DATA[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[2]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[3]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[4]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[5]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[6]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_DATA[7]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 370
-    Warning (15610): No output dependent on input pin "TD_HS" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 371
-    Warning (15610): No output dependent on input pin "TD_VS" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 373
-    Warning (15610): No output dependent on input pin "OTG_DREQ[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 380
-    Warning (15610): No output dependent on input pin "OTG_DREQ[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 380
-    Warning (15610): No output dependent on input pin "OTG_INT[0]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 382
-    Warning (15610): No output dependent on input pin "OTG_INT[1]" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 382
-    Warning (15610): No output dependent on input pin "IRDA_RXD" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 389
-    Warning (15610): No output dependent on input pin "FL_RY" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 418
-    Warning (15610): No output dependent on input pin "D5M_STROBE" File: C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.v Line: 430
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 248
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 250
+    Warning (15610): No output dependent on input pin "SMA_CLKIN" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 253
+    Warning (15610): No output dependent on input pin "UART_RTS" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 289
+    Warning (15610): No output dependent on input pin "SD_WP_N" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 303
+    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 316
+    Warning (15610): No output dependent on input pin "ENET0_INT_N" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 333
+    Warning (15610): No output dependent on input pin "ENET0_LINK100" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 334
+    Warning (15610): No output dependent on input pin "ENET0_RX_CLK" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 338
+    Warning (15610): No output dependent on input pin "ENET0_RX_COL" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 339
+    Warning (15610): No output dependent on input pin "ENET0_RX_CRS" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 340
+    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[0]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 341
+    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[1]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 341
+    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[2]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 341
+    Warning (15610): No output dependent on input pin "ENET0_RX_DATA[3]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 341
+    Warning (15610): No output dependent on input pin "ENET0_RX_DV" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 342
+    Warning (15610): No output dependent on input pin "ENET0_RX_ER" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 343
+    Warning (15610): No output dependent on input pin "ENET0_TX_CLK" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 344
+    Warning (15610): No output dependent on input pin "ENETCLK_25" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 348
+    Warning (15610): No output dependent on input pin "ENET1_INT_N" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 352
+    Warning (15610): No output dependent on input pin "ENET1_LINK100" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 353
+    Warning (15610): No output dependent on input pin "ENET1_RX_CLK" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 357
+    Warning (15610): No output dependent on input pin "ENET1_RX_COL" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 358
+    Warning (15610): No output dependent on input pin "ENET1_RX_CRS" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 359
+    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[0]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 360
+    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[1]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 360
+    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[2]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 360
+    Warning (15610): No output dependent on input pin "ENET1_RX_DATA[3]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 360
+    Warning (15610): No output dependent on input pin "ENET1_RX_DV" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 361
+    Warning (15610): No output dependent on input pin "ENET1_RX_ER" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 362
+    Warning (15610): No output dependent on input pin "ENET1_TX_CLK" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 363
+    Warning (15610): No output dependent on input pin "TD_CLK27" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 369
+    Warning (15610): No output dependent on input pin "TD_DATA[0]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[1]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[2]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[3]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[4]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[5]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[6]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_DATA[7]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 370
+    Warning (15610): No output dependent on input pin "TD_HS" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 371
+    Warning (15610): No output dependent on input pin "TD_VS" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 373
+    Warning (15610): No output dependent on input pin "OTG_DREQ[0]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 380
+    Warning (15610): No output dependent on input pin "OTG_DREQ[1]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 380
+    Warning (15610): No output dependent on input pin "OTG_INT[0]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 382
+    Warning (15610): No output dependent on input pin "OTG_INT[1]" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 382
+    Warning (15610): No output dependent on input pin "IRDA_RXD" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 389
+    Warning (15610): No output dependent on input pin "FL_RY" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 418
+    Warning (15610): No output dependent on input pin "D5M_STROBE" File: C:/Facial-Recognition/DE2_115_CAMERA.v Line: 430
 Info (21057): Implemented 2292 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 88 input pins
     Info (21059): Implemented 234 output pins
@@ -2802,15 +2802,15 @@ Info (21057): Implemented 2292 device resources after synthesis - the final reso
     Info (21064): Implemented 80 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 317 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Fri Nov 30 17:17:57 2018
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Wed Dec 05 23:16:59 2018
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:53
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.map.smsg.
+The suppressed messages can be found in C:/Facial-Recognition/DE2_115_CAMERA.map.smsg.
 
 

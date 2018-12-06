@@ -4,7 +4,8 @@ input logic CLK,
 input logic [8:0] ADDR,
 input logic [7:0] VGA_R_in,
 input logic [7:0] VGA_G_in,
-input logic [7:0] VGA_B_in
+input logic [7:0] VGA_B_in,
+output logic [31:0] integral_out [400]
 
 );
 
@@ -34,7 +35,7 @@ always_ff@ (posedge  CLK)
 										if ((x <= 19 && x >= 1) && (y <= 18 && y >= 0) && (x + y == 18))
 											begin
 											
-												window_buffer[x * 20 + y] = window_buffer[(x - 1) * 20 + y - 1] + window_buffer[x * 20 + y - 1]
+												window_buffer[x * 20 + y] = window_buffer[(x - 1) * 20 + y - 1] + window_buffer[x * 20 + y - 1];
 										
 											end
 										else if (y > 0)
@@ -63,9 +64,9 @@ always_ff@ (posedge  CLK)
 						
 					end
 					
-					// implement AdaBost Algorithm here to finalize classification
-					
 			end
+			
+			integral_out = integral_buffer;
 	end
 
 

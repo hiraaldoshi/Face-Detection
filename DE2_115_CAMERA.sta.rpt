@@ -1,5 +1,5 @@
 Timing Analyzer report for DE2_115_CAMERA
-Fri Nov 30 17:18:48 2018
+Wed Dec 05 23:17:52 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -131,12 +131,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.0%      ;
+;     Processor 2            ;   6.8%      ;
 +----------------------------+-------------+
 
 
@@ -145,7 +145,7 @@ refer to the applicable agreement for further details.
 +---------------------+--------+--------------------------+
 ; SDC File Path       ; Status ; Read at                  ;
 +---------------------+--------+--------------------------+
-; DE2_115_D5M_VGA.SDC ; OK     ; Fri Nov 30 17:18:43 2018 ;
+; DE2_115_D5M_VGA.SDC ; OK     ; Wed Dec 05 23:17:48 2018 ;
 +---------------------+--------+--------------------------+
 
 
@@ -3038,16 +3038,16 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; 6.362 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.070     ; 3.555      ;
 ; 6.363 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[22]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.573      ;
 ; 6.363 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[19]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.573      ;
-; 6.371 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[21]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.046     ; 3.570      ;
 ; 6.371 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp|dffe12a[3] ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.015     ; 3.601      ;
+; 6.371 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[21]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.046     ; 3.570      ;
 ; 6.375 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[10]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.561      ;
 ; 6.375 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[4]   ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.561      ;
 ; 6.375 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[5]   ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.561      ;
 ; 6.375 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[0]  ; Sdram_Control:u7|mADDR[6]   ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.561      ;
 ; 6.383 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[16]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.551      ;
 ; 6.383 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[17]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.551      ;
-; 6.396 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[4]  ; Sdram_Control:u7|mADDR[21]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.046     ; 3.545      ;
 ; 6.396 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp|dffe12a[2] ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.015     ; 3.576      ;
+; 6.396 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[4]  ; Sdram_Control:u7|mADDR[21]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.046     ; 3.545      ;
 ; 6.399 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[2]  ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.535      ;
 ; 6.399 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[2]  ; Sdram_Control:u7|mADDR[15]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.535      ;
 ; 6.399 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[2]  ; Sdram_Control:u7|mADDR[7]   ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.535      ;
@@ -3085,10 +3085,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; 6.469 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[22]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.467      ;
 ; 6.469 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[19]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.051     ; 3.467      ;
 ; 6.470 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_bwp|dffe12a[1] ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.015     ; 3.502      ;
+; 6.471 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp|dffe12a[0] ; Sdram_Control:u7|mADDR[18]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.024     ; 3.492      ;
 ; 6.471 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[4]  ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.463      ;
 ; 6.471 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[4]  ; Sdram_Control:u7|mADDR[15]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.463      ;
 ; 6.471 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[4]  ; Sdram_Control:u7|mADDR[7]   ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.053     ; 3.463      ;
-; 6.471 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp|dffe12a[0] ; Sdram_Control:u7|mADDR[18]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.024     ; 3.492      ;
 ; 6.474 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_brp|dffe12a[3] ; Sdram_Control:u7|mADDR[15]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.015     ; 3.498      ;
 ; 6.475 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[1]  ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.070     ; 3.442      ;
 ; 6.477 ; Sdram_Control:u7|Sdram_WR_FIFO:u_write1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lhh1:auto_generated|dffpipe_gd9:rs_bwp|dffe12a[2] ; Sdram_Control:u7|mADDR[14]  ; u6|altpll_component|auto_generated|pll1|clk[0] ; u6|altpll_component|auto_generated|pll1|clk[0] ; 10.000       ; -0.025     ; 3.485      ;
@@ -3296,8 +3296,8 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; 18.027 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[14] ; VGA_Controller:u1|oVGA_G[4]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.192     ; 1.768      ;
 ; 18.034 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[6]  ; VGA_Controller:u1|oVGA_R[6]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.192     ; 1.761      ;
 ; 18.037 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[3]  ; VGA_Controller:u1|oVGA_B[3]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.210     ; 1.740      ;
-; 18.052 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[3]  ; VGA_Controller:u1|oVGA_R[3]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.192     ; 1.743      ;
 ; 18.052 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[10] ; VGA_Controller:u1|oVGA_G[5]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.199     ; 1.736      ;
+; 18.052 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read2_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[3]  ; VGA_Controller:u1|oVGA_R[3]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.192     ; 1.743      ;
 ; 18.053 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[14] ; VGA_Controller:u1|oVGA_G[9]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.199     ; 1.735      ;
 ; 18.108 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[12] ; VGA_Controller:u1|oVGA_G[7]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.199     ; 1.680      ;
 ; 18.115 ; Sdram_Control:u7|Sdram_RD_FIFO:u_read1_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_dih1:auto_generated|altsyncram_sj31:fifo_ram|q_b[9]  ; VGA_Controller:u1|oVGA_B[9]                                                                                                                                                        ; u6|altpll_component|auto_generated|pll1|clk[3] ; u6|altpll_component|auto_generated|pll1|clk[3] ; 20.000       ; -0.193     ; 1.679      ;
@@ -6530,7 +6530,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 30 17:18:41 2018
+    Info: Processing started: Wed Dec 05 23:17:45 2018
 Info: Command: quartus_sta DE2_115_CAMERA -c DE2_115_CAMERA
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -6704,9 +6704,9 @@ Info (332114): Report Metastability: Found 62 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Fri Nov 30 17:18:48 2018
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Wed Dec 05 23:17:52 2018
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
