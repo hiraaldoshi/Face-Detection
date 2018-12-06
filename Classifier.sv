@@ -5,6 +5,7 @@ input logic [8:0] ADDR,
 input logic [7:0] VGA_R_in,
 input logic [7:0] VGA_G_in,
 input logic [7:0] VGA_B_in,
+output logic DONE,
 output logic [31:0] integral_out [400]
 
 );
@@ -67,6 +68,7 @@ always_ff@ (posedge  CLK)
 			end
 			
 			integral_out = integral_buffer;
+			DONE = 1;									// set to 0 elsewhere, later
 	end
 
 
