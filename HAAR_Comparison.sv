@@ -13,6 +13,15 @@ string x_coord;
 string y_coord;
 string width;
 string height;
+string feature_thresh;
+string left_val;
+string right_val;
+string stage_thresh;
+
+int integral;
+int accumulate;
+
+logic is_face_local;
 
 always_comb
 	begin
@@ -40,18 +49,41 @@ always_comb
 										`ifdef x_coord					// make sure this is calling the macro definition, not the local string obj
 											begin
 											
-												
+													// TODO: fill in the integral value
 											
 											end
 									
 									end
+									
+									// format in form: VARIABLE_stage#_feature#
+									feature_thresh = {"FEATURE_THRESH_", $sformatf("%d", i), "_", $sformatf("%d", j)};
+									left_val = {"LEFT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
+									right_val = {"RIGHT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
+									
+									if(integral >`feature_thresh)
+										accumulate += right_val;
+									else
+										accumulate += left_val;
 							
 							end
 							
+							// format in form: STAGE_THRESH_stage#
+							stage_thresh = {"STAGE_THRESH_", $sformatf("%d", i)};
+							
+							if(accumulate < `stage_thresh)
+								begin
+									is_face_local = 0;
+									break;
+								end
+							else
+								is_face_local = 1;
 					
 					end
 		
 			end
+			
+			is_face = is_face_local;
+			
 	end		
 
 endmodule 
