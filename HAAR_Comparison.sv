@@ -56,7 +56,7 @@ always_comb
 															for (int y = `y_coord; y < `y_coord + `height; y++)
 																begin
 																
-																		integral += integral_buffer[y * 20 + x]; 
+																	integral += integral_buffer[y * 20 + x]; 
 																
 																end
 															
