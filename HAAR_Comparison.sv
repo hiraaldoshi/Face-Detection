@@ -8,41 +8,39 @@ output logic is_face
 
 );
 
-	logic is_face_local;
-	logic [31:0] mult, accum;											// need to check required sizes later & switch to float
+string feature_number;
 
-	always_comb
-		begin
-		
-		for (int i = 0; i < 22; i++)
+always_comb
+	begin
+	
+		if(START)
 			begin
-			
-				for (int j = 0; j < 400; j++)
+		
+				for(int i= 0; i < 22; i++)
 					begin
 					
-						mult = integral_buffer[j] * CONST_VALUE; 	// input the corresponding values for CONSTs
-						if (mult >= FEATURE_THRESH)					// check if >= || >
-								accum += RIGHT;
-						else
-								accum += LEFT;
-				
-					end
-					
-					if (accum <= STAGE_THRESH)
-						begin
-						
-							is_face_local = 0;
-							break;
+						feature_number = {"STAGE_", $sformatf("%d", i), "_FEAT_NUM"};
+						for(int j = 0; j < `feature_number; j++)
+							begin
 							
-						end
-					else
-						is_face_local = 1;
+								for(int k = 0; k < 3; k++)
+									begin
+									
+										if()
+											begin
+											
+												
+											
+											end
+									
+									end
+							
+							end
+							
 					
-				end
-				
-			is_face = is_face_local;
-			
+					end
+		
 			end
-			
+	end		
 
 endmodule 
