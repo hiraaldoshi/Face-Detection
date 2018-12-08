@@ -49,8 +49,19 @@ always_comb
 										`ifdef x_coord					// make sure this is calling the macro definition, not the local string obj
 											begin
 											
-													// TODO: fill in the integral value
-											
+													// fill in the integral value array - > 2D
+													for (int x = `x_coord; x < `x_coord +`width ; x++)
+														begin
+															
+															for (int y = `y_coord; y < `y_coord + `height; y++)
+																begin
+																
+																		integral += integral_buffer[y * 20 + x]; 
+																
+																end
+															
+														end
+												
 											end
 									
 									end
@@ -60,7 +71,7 @@ always_comb
 									left_val = {"LEFT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
 									right_val = {"RIGHT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
 									
-									if(integral >`feature_thresh)
+									if(integral > `feature_thresh)
 										accumulate += right_val;
 									else
 										accumulate += left_val;
