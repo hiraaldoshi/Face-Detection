@@ -1,8 +1,8 @@
 """
-This file is used to convert the HAAR Classifier Data from an XML format into variables, for use in SystemVerilog.
-The information is printed, and later put into a header file by using:
+This file is used to convert the HAAR Classifier Data from an XML format into sv modules, for use in SystemVerilog.
+The information is printed, and later put into a sv file by using:
 
-    $python HaarXmlParser.py >> examlpe.h
+    $python HaarXmlParser.py "parameter" >> examlpe.sv
 
 Note: the file was written for use by Python 3
 
