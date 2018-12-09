@@ -18,6 +18,7 @@ string left_val;
 string right_val;
 string stage_thresh;
 
+
 int integral;
 int accumulate;
 
@@ -29,7 +30,7 @@ always_comb
 		if(START)
 			begin
 		
-				for(int i= 0; i < 22; i++)
+				for(int i = 0; i < 22; i++)
 					begin
 					
 						// format in form: STAGE_stage#_FEAT_NUM
@@ -47,7 +48,6 @@ always_comb
 										height = {"HEIGHT_", $sformatf("%d", i), "_", $sformatf("%d", j), "_", $sformatf("%d", k)};
 										
 										`ifdef x_coord					// make sure this is calling the macro definition, not the local string obj
-											begin
 											
 													// fill in the integral value array - > 2D
 													for (int x = `x_coord; x < `x_coord +`width ; x++)
@@ -62,7 +62,7 @@ always_comb
 															
 														end
 												
-											end
+										`endif
 									
 									end
 									
