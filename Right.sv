@@ -1,9 +1,13 @@
 module Right (
 
-input string name,
+input int stage_num,
+input int feature_num,
 output real value
 
 );
+
+string name;
+assign name = {"RIGHT_", $sformatf("%d", stage_num), "_", $sformatf("%d", feature_num)};
 
 always_comb
     begin

@@ -1,9 +1,12 @@
 module Stage_Threshold (
 
-input string name,
+input int stage_num,
 output real value
 
 );
+
+string name;
+assign name = {"STAGE_THRESH_", $sformatf("%d", stage_num)};
 
 always_comb
     begin

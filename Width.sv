@@ -1,9 +1,16 @@
 module Width (
 
-input string name,
+input int stage_num,
+input int feature_num,
+input int rectangle_num,
 output real value
 
 );
+
+string name;
+assign name = {"WIDTH_", $sformatf("%d", stage_num),
+					"_", $sformatf("%d", feature_num), "_",
+					$sformatf("%d", rectangle_num)};
 
 always_comb
     begin

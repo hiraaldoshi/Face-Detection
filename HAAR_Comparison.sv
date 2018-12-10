@@ -1,5 +1,3 @@
-`include "HAAR_Constants.h"
-
 module HAAR_Comparison (
 
 input logic START,
@@ -8,15 +6,19 @@ output logic is_face
 
 );
 
-string feature_number;
-string x_coord;
-string y_coord;
-string width;
-string height;
-string feature_thresh;
-string left_val;
-string right_val;
-string stage_thresh;
+int stage_num;
+int feature_num;
+int rectangle_num;
+
+int feat_amount;
+int x_coord;
+int y_coord;
+int width;
+int height;
+int feature_thresh;
+int left_val;
+int right_val;
+int stage_thresh;
 
 
 int integral;
@@ -30,30 +32,23 @@ always_comb
 		if(START)
 			begin
 		
-				for(int i = 0; i < 22; i++)
+				for(stage_num = 0; stage_num < 22; stage_num++)
 					begin
 					
-						// format in form: STAGE_stage#_FEAT_NUM
-						feature_number = {"STAGE_", $sformatf("%d", i), "_FEAT_NUM"};
-						for(int j = 0; j < `feature_number; j++)
+						for(feature_num = 0; feature_num < feat_amount; feature_num++)
 							begin
 							
-								for(int k = 0; k < 3; k++)
+								for(rectangle_num = 0; rectangle_num < 3; rectangle_num++)
 									begin
 										
-										// format in form: VARIABLE_stage#_feature#_rectangle#
-										x_coord = {"X_COORD_", $sformatf("%d", i), "_", $sformatf("%d", j), "_", $sformatf("%d", k)};
-										y_coord = {"Y_COORD_", $sformatf("%d", i), "_", $sformatf("%d", j), "_", $sformatf("%d", k)};
-										width = {"WIDTH_", $sformatf("%d", i), "_", $sformatf("%d", j), "_", $sformatf("%d", k)};
-										height = {"HEIGHT_", $sformatf("%d", i), "_", $sformatf("%d", j), "_", $sformatf("%d", k)};
-										
-										`ifdef x_coord					// make sure this is calling the macro definition, not the local string obj
+										if(x_coord != -1)					// update default to -1 for all const
+											begin
 											
 													// fill in the integral value array - > 2D
-													for (int x = `x_coord; x < `x_coord +`width ; x++)
+													for (int x = x_coord; x < x_coord + width ; x++)
 														begin
 															
-															for (int y = `y_coord; y < `y_coord + `height; y++)
+															for (int y = y_coord; y < y_coord + height; y++)
 																begin
 																
 																	integral += integral_buffer[y * 20 + x]; 
@@ -62,26 +57,18 @@ always_comb
 															
 														end
 												
-										`endif
+											end
 									
 									end
 									
-									// format in form: VARIABLE_stage#_feature#
-									feature_thresh = {"FEATURE_THRESH_", $sformatf("%d", i), "_", $sformatf("%d", j)};
-									left_val = {"LEFT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
-									right_val = {"RIGHT_", $sformatf("%d", i), "_", $sformatf("%d", j)};
-									
-									if(integral > `feature_thresh)
+									if(integral > feature_thresh)
 										accumulate += right_val;
 									else
 										accumulate += left_val;
 							
 							end
 							
-							// format in form: STAGE_THRESH_stage#
-							stage_thresh = {"STAGE_THRESH_", $sformatf("%d", i)};
-							
-							if(accumulate < `stage_thresh)
+							if(accumulate < stage_thresh)
 								begin
 									is_face_local = 0;
 									break;
@@ -95,6 +82,20 @@ always_comb
 			
 			is_face = is_face_local;
 			
-	end		
+	end
+
+// call the modules, which contain comb logic, to get new HAAR constants when necessary
+Feature_Amount f_a (.*);
+
+Stage_Thresh s (.*, .value(stage_thresh));
+
+Feature_Thresh f (.*, .value(feature_thresh));
+Right r (.*, .value(right_val));
+Left l (.*, .value(left_val));
+
+Width w (.*, .value(width));
+Height h (.*, .value(height));
+X_Coord x_c (.*, .value(x_coord));
+Y_Coord y_c (.*, .value(y_coord));
 
 endmodule 
