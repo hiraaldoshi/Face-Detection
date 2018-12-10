@@ -1,42 +1,54 @@
 module ImageScaler(
 
 input logic CLK,
+input logic Captured,
 input logic read,
 input logic write,
 input logic [8:0] WR_ADDR,
 input logic [8:0] RD_ADDR,
-input logic [7:0] VGA_R_in,
-input logic [7:0] VGA_G_in,
-input logic [7:0] VGA_B_in,
+input real X_in,
+input real Y_in,
+input real Z_in,
 input logic	[15:0] X_Cont,
 input logic	[15:0] Y_Cont,
-output logic [7:0] VGA_R_out,
-output logic [7:0] VGA_G_out,
-output logic [7:0] VGA_B_out,
+output real X_out,
+output real Y_out,
+output real Z_out,
 output logic DONE
 
 );
 
-logic [31:0] registers [400]; 
+logic [31:0] registers [400];
+real X, Y, Z;
 
-//Scale
+// Scale the image down, while simultaneously cropping when the image has been captured
 always_ff @(posedge CLK)
 begin
-	if (write && X_Cont % 63 == 0 && Y_Cont % 47 == 0)			// figure out proper scaling
-		registers[WR_ADDR] <= {VGA_R_in, VGA_G_in,VGA_B_in};
 	
-		// store rgb in registers
-	
-	if (X_Cont == 1278 && Y_Cont == 958)							// if y doesn't function properly, use same method as CCD_Capture (F_VAL)
-		DONE <= 1;
-	else
-		DONE <= 0;
-		// once done, continue w/ next steps
+	if (Captured && write)
+		begin
+		
+			// store the XYZ data
+			if (X_Cont <= 1120 && X_Cont >= 160)
+				begin
+				
+					if ((X_Cont - 160) % 47 == 0 && Y_Cont % 47 == 0)
+						registers[WR_ADDR] <= {X_in, Y_in, Z_in};
+					
+				end
+				
+			// reaching these coordinates means we have stored the whole image
+			if (X_Cont == 1278 && Y_Cont == 958)							// if y doesn't function properly, use same method as CCD_Capture (F_VAL)
+				DONE <= 1;
+			else
+				DONE <= 0;
+			
+		end
+		
 end
 		
-//storing the pixel?
-assign VGA_R_out = read ? registers[RD_ADDR][23:16] : 0;
-assign VGA_G_out = read ? registers[RD_ADDR][15:8] : 0;
-assign VGA_B_out = read ? registers[RD_ADDR][7:0] : 0;
+assign X_out <= read ? registers[RD_ADDR][23:16] : 0;
+assign Y_out <= read ? registers[RD_ADDR][15:8] : 0;
+assign Z_out <= read ? registers[RD_ADDR][7:0] : 0;
 	
 endmodule 
