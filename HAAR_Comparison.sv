@@ -32,6 +32,7 @@ always_comb
 		if(START)
 			begin
 		
+				// loop through each stage, features of the stage, and rectangles of the features
 				for(stage_num = 0; stage_num < 22; stage_num++)
 					begin
 					
@@ -46,7 +47,7 @@ always_comb
 											begin
 											
 												// fill in the integral value array - > 2D
-												for (int x = x_coord; x < x_coord + width ; x++)
+												for (int x = x_coord; x < x_coord + width ; x++)			// may just need the top left
 													begin
 														
 														for (int y = y_coord; y < y_coord + height; y++)
@@ -69,6 +70,7 @@ always_comb
 							
 							end
 							
+							// stop the process if it does not meed stage theshold (failed)
 							if(accumulate < stage_thresh)
 								begin
 								
