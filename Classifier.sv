@@ -10,14 +10,19 @@ output logic [31:0] integral_out [400]
 );
 
 
-real buffer [20];
-real window_buffer [800];
-real integral_buffer [400];
+logic [31:0] buffer [20];
+logic [31:0] window_buffer [800];
+logic [31:0] integral_buffer [400];
 
 always_ff@ (posedge  CLK)
 	begin 
+	
+		// full up the line buffer
 		buffer[ADDR] <= XYZ_in;
 		
+		if (ADDR == 19)
+			begin
+			
 			for (int i = 0; i < 20; i++)
 				begin
 																
@@ -53,13 +58,15 @@ always_ff@ (posedge  CLK)
 							for (int k = 0; k < 20; k++)
 								begin
 								
-									integral_buffer[j * 20 + k] = integral_buffer[j * 20 + k] + window_buffer[j * 20 + k * 2] + window_buffer[j * 20 + (40 - k - 1)];
+									integral_buffer[j * 20 + k] = integral_buffer[j * 20 + k] + window_buffer[j * 20 + k * 2] - window_buffer[j * 20 + (40 - k - 1)];
 								
 								end
 						
 						end
 					
 				end
+				
+			end
 			
 			integral_out = integral_buffer;
 			DONE = 1;									// set to 0 elsewhere, later

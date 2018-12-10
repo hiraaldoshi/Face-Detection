@@ -47,8 +47,8 @@ begin
 		
 end
 		
-assign X_out <= read ? registers[RD_ADDR][23:16] : 0;
-assign Y_out <= read ? registers[RD_ADDR][15:8] : 0;
-assign Z_out <= read ? registers[RD_ADDR][7:0] : 0;
+assign X_out = read ? registers[RD_ADDR][23:16] : 0;
+assign Y_out = read ? registers[RD_ADDR][15:8] : 0;
+assign Z_out = read ? registers[RD_ADDR][7:0] : 0;
 	
 endmodule 
