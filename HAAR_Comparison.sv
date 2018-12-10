@@ -45,18 +45,18 @@ always_comb
 										if(x_coord != -1)
 											begin
 											
-													// fill in the integral value array - > 2D
-													for (int x = x_coord; x < x_coord + width ; x++)
-														begin
+												// fill in the integral value array - > 2D
+												for (int x = x_coord; x < x_coord + width ; x++)
+													begin
+														
+														for (int y = y_coord; y < y_coord + height; y++)
+															begin
 															
-															for (int y = y_coord; y < y_coord + height; y++)
-																begin
-																
-																	integral += integral_buffer[y * 20 + x]; 
-																
-																end
+																integral += integral_buffer[y * 20 + x]; 
 															
-														end
+															end
+														
+													end
 												
 											end
 									
@@ -71,8 +71,10 @@ always_comb
 							
 							if(accumulate < stage_thresh)
 								begin
+								
 									is_face_local = 0;
 									break;
+									
 								end
 							else
 								is_face_local = 1;

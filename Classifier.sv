@@ -17,7 +17,7 @@ logic [31:0] integral_buffer [400];
 always_ff@ (posedge  CLK)
 	begin 
 	
-		// full up the line buffer
+		// fill up the line buffer
 		buffer[ADDR] <= XYZ_in;
 		
 		if (ADDR == 19)
@@ -35,17 +35,10 @@ always_ff@ (posedge  CLK)
 								begin
 								
 									if ((x <= 19 && x >= 1) && (y <= 18 && y >= 0) && (x + y == 18))
-										begin
-										
-											window_buffer[x * 20 + y] = window_buffer[(x - 1) * 20 + y - 1] + window_buffer[x * 20 + y - 1];
+										window_buffer[x * 20 + y] = window_buffer[(x - 1) * 20 + y - 1] + window_buffer[x * 20 + y - 1];
 									
-										end
 									else if (y > 0)
-										begin
-										
-											window_buffer[x * 20 + y] = window_buffer[x * 20 + y - 1];
-										
-										end
+										window_buffer[x * 20 + y] = window_buffer[x * 20 + y - 1];
 								
 								end
 						
@@ -56,11 +49,8 @@ always_ff@ (posedge  CLK)
 						begin
 						
 							for (int k = 0; k < 20; k++)
-								begin
+								integral_buffer[j * 20 + k] = integral_buffer[j * 20 + k] + window_buffer[j * 20 + k * 2] - window_buffer[j * 20 + (40 - k - 1)];
 								
-									integral_buffer[j * 20 + k] = integral_buffer[j * 20 + k] + window_buffer[j * 20 + k * 2] - window_buffer[j * 20 + (40 - k - 1)];
-								
-								end
 						
 						end
 					
