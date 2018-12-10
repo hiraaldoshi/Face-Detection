@@ -1,4 +1,4 @@
-module Y_coord (
+module Y_Coord (
 
 input int stage_num,
 input int feature_num,

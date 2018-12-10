@@ -87,9 +87,9 @@ always_comb
 // call the modules, which contain comb logic, to get new HAAR constants when necessary
 Feature_Amount f_a (.*);
 
-Stage_Thresh s (.*, .value(stage_thresh));
+Stage_Threshold s (.*, .value(stage_thresh));
 
-Feature_Thresh f (.*, .value(feature_thresh));
+Feature_Threshold f (.*, .value(feature_thresh));
 Right r (.*, .value(right_val));
 Left l (.*, .value(left_val));
 
