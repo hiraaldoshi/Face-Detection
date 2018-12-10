@@ -36,7 +36,7 @@ always_comb
             "STAGE_THRESH_20": value  <= 104.74919891357421875000;
             "STAGE_THRESH_21": value  <= 105.76110076904296875000;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 

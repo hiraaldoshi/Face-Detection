@@ -2150,7 +2150,7 @@ always_comb
             "LEFT_21_211": value  <= 0.54312318563461303711;
             "LEFT_21_212": value  <= 0.47382280230522161313;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 

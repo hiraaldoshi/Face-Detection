@@ -4648,7 +4648,7 @@ always_comb
             "HEIGHT_21_212_1": value  <=  3;
             "HEIGHT_21_212_2": value  <=  3;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 

@@ -40,8 +40,9 @@ always_comb
 							
 								for(rectangle_num = 0; rectangle_num < 3; rectangle_num++)
 									begin
-										
-										if(x_coord != -1)					// update default to -1 for all const
+									
+										// if it does not exist for the given rectangle, it will have default value (-1)
+										if(x_coord != -1)
 											begin
 											
 													// fill in the integral value array - > 2D

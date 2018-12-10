@@ -4648,7 +4648,7 @@ always_comb
             "X_COORD_21_212_1": value  <= 0;
             "X_COORD_21_212_2": value  <= 5;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 

@@ -4648,7 +4648,7 @@ always_comb
             "WIDTH_21_212_1": value  <=  5;
             "WIDTH_21_212_2": value  <=  5;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 

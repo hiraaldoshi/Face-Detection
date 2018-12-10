@@ -2150,7 +2150,7 @@ always_comb
             "FEATURE_THRESH_21_211": value  <= 0.01115430984646080016;
             "FEATURE_THRESH_21_212": value  <= 0.04316243156790729868;
 
-            default: value <= 0;
+            default: value <= -1;
 
         endcase
 
