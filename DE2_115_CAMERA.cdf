@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EP4CE115F29) MfrSpec(OpMask(0) FullPath("C:/dev/385/TRDB-D5M_v.1.2.4_SystemCD/DE2_115_CAMERA/DE2_115_CAMERA.sof"));
+	P ActionCode(Cfg)
+		Device PartName(EP4CE115F29) Path("C:/Facial-Recognition/") File("DE2_115_CAMERA.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

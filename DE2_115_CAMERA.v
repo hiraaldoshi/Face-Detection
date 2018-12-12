@@ -546,9 +546,10 @@ RAW2RGB				u4	(	.iCLK(D5M_PIXLCLK),
 //Frame count display
 SEG7_LUT_8 			u5	(	.oSEG0(HEX0),.oSEG1(HEX1),
 							.oSEG2(HEX2),.oSEG3(HEX3),
-							.oSEG4(HEX4),.oSEG5(HEX5),
-							.oSEG6(HEX6),.oSEG7(HEX7),
-							.iDIG(Frame_Cont[31:0])
+							.oSEG4(),.oSEG5(),
+							.oSEG6(),.oSEG7(),
+							//.iDIG(Frame_Cont[31:0])			// TODO: add a module that delays
+							.iDIG(sCCD_B)
 						);
 
 sdram_pll 			u6	(
