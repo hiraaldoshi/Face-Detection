@@ -2,7 +2,7 @@ module Left (
 
 input int stage_num,
 input int feature_num,
-output real value
+output int value
 
 );
 

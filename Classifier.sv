@@ -3,16 +3,16 @@ module Classifier(
 input logic CLK,
 input logic START,
 input logic [8:0] ADDR,
-input real XYZ_in,
+input logic [95:0] XYZ_in,
 output logic DONE,
-output logic [31:0] integral_out [400]
+output logic [95:0] integral_out [400]
 
 );
 
 
-logic [31:0] buffer [20];
-logic [31:0] window_buffer [800];
-logic [31:0] integral_buffer [400];
+logic [95:0] buffer [20];
+logic [95:0] window_buffer [800];
+logic [95:0] integral_buffer [400];
 
 always_ff@ (posedge  CLK)
 	begin 

@@ -5,21 +5,21 @@ input logic Captured,
 input logic read,
 input logic write,
 input logic [8:0] WR_ADDR,
-input logic [8:0] RD_ADDR,
-input real X_in,
-input real Y_in,
-input real Z_in,
+output logic [8:0] RD_ADDR,
+input int X_in,
+input int Y_in,
+input int Z_in,
 input logic	[15:0] X_Cont,
 input logic	[15:0] Y_Cont,
-output real X_out,
-output real Y_out,
-output real Z_out,
+output int X_out,
+output int Y_out,
+output int Z_out,
 output logic DONE
 
 );
 
-logic [31:0] registers [400];
-real X, Y, Z;
+logic [95:0] registers [400];
+//real X, Y, Z;
 
 // Scale the image down, while simultaneously cropping when the image has been captured
 always_ff @(posedge CLK)
@@ -47,8 +47,11 @@ begin
 		
 end
 		
-assign X_out = read ? registers[RD_ADDR][23:16] : 0;
-assign Y_out = read ? registers[RD_ADDR][15:8] : 0;
-assign Z_out = read ? registers[RD_ADDR][7:0] : 0;
+// I'm breaking things
+assign X_out = read ? registers[WR_ADDR][95:64] : 0;
+assign Y_out = read ? registers[WR_ADDR][63:32] : 0;
+assign Z_out = read ? registers[WR_ADDR][31:0] : 0;
+
+assign RD_ADDR = WR_ADDR + 1;
 	
 endmodule 

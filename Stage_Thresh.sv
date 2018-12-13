@@ -1,7 +1,7 @@
 module Stage_Threshold (
 
 input int stage_num,
-output real value
+output int value
 
 );
 

@@ -33,7 +33,7 @@ always_comb
 			20	: feat_amount	<= 211;
 			21	: feat_amount	<= 213;
 			
-			default: ;
+			default: feat_amount <= -1;
 			
 		endcase
 	

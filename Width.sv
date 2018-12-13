@@ -3,7 +3,7 @@ module Width (
 input int stage_num,
 input int feature_num,
 input int rectangle_num,
-output real value
+output int value
 
 );
 

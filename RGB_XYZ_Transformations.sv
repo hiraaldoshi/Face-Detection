@@ -1,11 +1,12 @@
 module RGB_To_XYZ (
 
-input logic  R,
-input logic  G,
-input logic  B,
-output real  X,
-output real  Y,
-output real  Z
+input int  R_in,
+input int  G_in,
+input int  B_in,
+output int  X,
+output int  Y,
+output int  Z
+
 
 );
 
@@ -13,9 +14,9 @@ always_comb
 	begin
 	
 		//	convert RGB into XYZ (black and white) using a linear tranformation
-		X <= R * 0.412453 + G * 0.357580 + B * 0.180423;
-		Y <= R * 0.212671 + G * 0.715160 + B * 0.072169;
-		Z <= R * 0.019334 + G * 0.119193 + B * 0.950227;
+		X <= (R_in) * 41/100 + (G_in) * 36/100  + (B_in) * 18/100;
+		Y <= (R_in) * 21/100 + (G_in) * 71/100  + (B_in) * 72/1000;
+		Z <= (R_in) * 19/1000 + (G_in) * 12/100 + (B_in) * 95/100;
 		
 	end
 
@@ -23,21 +24,21 @@ endmodule
 
 module RGB_Normalizer (
 
-input logic  R_in,
-input logic  G_in,
-input logic  B_in,
-output real  R_out,
-output real  G_out,
-output real  B_out
+input logic [7:0] R_in,
+input logic [7:0] G_in,
+input logic [7:0] B_in,
+output int R_out,
+output int G_out,
+output int B_out
 
 );
 
 always_comb
 	begin
 	
-		R_out <= R_in / 255;
-		G_out <= G_in / 255;
-		B_out <= B_in / 255;
+		R_out <= (R_in * 1000000) / 255;
+		G_out <= (G_in * 1000000) / 255;
+		B_out <= (B_in * 1000000) / 255;
 	
 	end
 

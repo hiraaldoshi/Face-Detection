@@ -1,7 +1,7 @@
 module HAAR_Comparison (
 
 input logic START,
-input logic [31:0] integral_buffer [400],
+input logic [95:0] integral_buffer [400],
 output logic is_face
 
 );
@@ -15,14 +15,14 @@ int x_coord;
 int y_coord;
 int width;
 int height;
+
 int feature_thresh;
 int left_val;
 int right_val;
 int stage_thresh;
 
-
-int integral;
-int accumulate;
+logic [100:0] integral;
+logic [100:0] accumulate;
 
 logic is_face_local;
 
@@ -36,32 +36,47 @@ always_comb
 				for(stage_num = 0; stage_num < 22; stage_num++)
 					begin
 					
-						for(feature_num = 0; feature_num < feat_amount; feature_num++)
+						for(feature_num = 0; feature_num < 212; feature_num++)
 							begin
 							
-								for(rectangle_num = 0; rectangle_num < 3; rectangle_num++)
+								if (feat_amount != -1)
 									begin
-									
-										// if it does not exist for the given rectangle, it will have default value (-1)
-										if(x_coord != -1)
+							
+										for(rectangle_num = 0; rectangle_num < 3; rectangle_num++)
 											begin
 											
-												// fill in the integral value array - > 2D
-												for (int x = x_coord; x < x_coord + width ; x++)			// may just need the top left
+												// if it does not exist for the given rectangle, it will have default value (-1)
+												if(x_coord != -1)
 													begin
-														
-														for (int y = y_coord; y < y_coord + height; y++)
+													
+														// fill in the integral value array - > 2D
+														for (int x = 0; x < 20 ; x++)			// may just need the top left
 															begin
 															
-																integral += integral_buffer[y * 20 + x]; 
-															
+																if (x >= x_coord && x < x_coord + width)
+																	begin
+																
+																		for (int y = 0; y < 20; y++)
+																			begin
+																			
+																				if (y >= y_coord && y < y_coord + height)
+																					integral += integral_buffer[y * 20 + x]; 
+																			
+																			end
+																	
+																	end
+																
 															end
 														
 													end
-												
+												else
+													break;
+											
 											end
-									
-									end
+											
+										end
+									else
+										break;
 									
 									if(integral > feature_thresh)
 										accumulate += right_val;
@@ -81,7 +96,7 @@ always_comb
 							else
 								is_face_local = 1;
 					
-					end
+					end	
 		
 			end
 			
