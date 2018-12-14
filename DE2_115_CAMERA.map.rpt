@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_115_CAMERA
-Thu Dec 13 01:11:14 2018
+Thu Dec 13 21:34:20 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Dec 13 01:11:14 2018           ;
+; Analysis & Synthesis Status        ; Failed - Thu Dec 13 21:34:20 2018           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_115_CAMERA                              ;
 ; Top-level Entity Name              ; DE2_115_CAMERA                              ;
@@ -164,19 +164,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 13 01:10:56 2018
+    Info: Processing started: Thu Dec 13 21:33:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE2_115_CAMERA -c DE2_115_CAMERA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(17) near text: ")"; mismatched closing parenthesis . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 17
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(17) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 17
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(18) near text: ")"; mismatched closing parenthesis . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 18
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(18) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 18
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(19) near text: ")"; mismatched closing parenthesis . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 19
-Error (10170): Verilog HDL syntax error at RGB_XYZ_Transformations.sv(19) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 19
-Error (10112): Ignored design unit "RGB_To_XYZ" at RGB_XYZ_Transformations.sv(1) due to previous errors File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 1
-Error (10112): Ignored design unit "RGB_Normalizer" at RGB_XYZ_Transformations.sv(25) due to previous errors File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 25
-Info (12021): Found 0 design units, including 0 entities, in source file rgb_xyz_transformations.sv
+Info (12021): Found 2 design units, including 2 entities, in source file rgb_xyz_transformations.sv
+    Info (12023): Found entity 1: RGB_To_XYZ File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 1
+    Info (12023): Found entity 2: RGB_Normalizer File: C:/Facial-Recognition/RGB_XYZ_Transformations.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file y_coord.sv
     Info (12023): Found entity 1: Y_Coord File: C:/Facial-Recognition/Y_Coord.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file x_coord.sv
@@ -205,8 +199,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file haar_co
     Info (12023): Found entity 1: HAAR_Comparison File: C:/Facial-Recognition/HAAR_Comparison.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file feature_amount.sv
     Info (12023): Found entity 1: Feature_Amount File: C:/Facial-Recognition/Feature_Amount.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file de2_115_camera.sv
-    Info (12023): Found entity 1: DE2_115_CAMERA File: C:/Facial-Recognition/DE2_115_CAMERA.sv Line: 48
+Error (10170): Verilog HDL syntax error at DE2_115_CAMERA.sv(677) near text: "]". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Facial-Recognition/DE2_115_CAMERA.sv Line: 677
+Error (10112): Ignored design unit "DE2_115_CAMERA" at DE2_115_CAMERA.sv(48) due to previous errors File: C:/Facial-Recognition/DE2_115_CAMERA.sv Line: 48
+Info (12021): Found 0 design units, including 0 entities, in source file de2_115_camera.sv
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdram_rd_fifo.v
     Info (12023): Found entity 1: Sdram_RD_FIFO File: C:/Facial-Recognition/Sdram_Control/Sdram_RD_FIFO.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_control/sdram_wr_fifo.v
@@ -242,11 +237,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file sdram_c
 Info (12021): Found 1 design units, including 1 entities, in source file v/seg7_lut.sv
     Info (12023): Found entity 1: SEG7_LUT File: C:/Facial-Recognition/v/SEG7_LUT.sv Line: 43
 Info (144001): Generated suppressed messages file C:/Facial-Recognition/DE2_115_CAMERA.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 5 warnings
-    Error: Peak virtual memory: 4740 megabytes
-    Error: Processing ended: Thu Dec 13 01:11:14 2018
-    Error: Elapsed time: 00:00:18
-    Error: Total CPU time (on all processors): 00:00:40
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 5 warnings
+    Error: Peak virtual memory: 4741 megabytes
+    Error: Processing ended: Thu Dec 13 21:34:21 2018
+    Error: Elapsed time: 00:00:23
+    Error: Total CPU time (on all processors): 00:00:53
 
 
 +------------------------------------------+
