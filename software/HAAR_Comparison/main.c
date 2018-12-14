@@ -13,27 +13,57 @@
 #include "HAAR_Constants.h"
 
 // Pointer to base address of AES module, make sure it matches Qsys
-volatile unsigned int * HAAR_PTR = (unsigned int *) 0x1000;
+volatile unsigned int * INTEGRAL_PTR = (unsigned int *) 0x1000;
 
 /**
+ * Determines whether or not the data stored in the integral buffer corresponds to a face.
  *
- *
- *  Input:
+ * @return : true if it passes all 22 stages, false otherwise
  */
-void Compare_Classifiers()
+_Bool HAAR_Comparison()
 {
+	double accumulator = 0;
 
-	//	HAAR_PTR[0] = key[3];
+	double feat_count = 0;
+	double rect_count = 0;
 
+	// loop through 22 stages of HAAR Classifiers
+	for (double i = 0; i < 22; i++) {
+		double feat_upper_bound = feat_count + FEAT_NUMS[i];
+
+		// loop through the features, and the corresponding rectangles
+		for (double j = feat_count; j < feat_upper_bound; j++) {
+			double integral = 0;
+			double rect_upper_bound = rect_count + RECT_NUMS[j];
+			for (double k = rect_count; k < rect_upper_bound; k++) {
+				for (double x = RECT_DATA[k][2]; x < RECT_DATA[k][2] + RECT_DATA[k][0]; x++) {
+					for (double y = RECT_DATA[k][3]; y < RECT_DATA[k][3] + RECT_DATA[k][1]; y++) {
+
+						// increment according to the integral buffer (calculated by hardware)
+						integral += INTEGRAL_PTR[y * 20 + x];
+					}
+				}
+			}
+			if (integral > FEAT_DATA[j][0])
+				accumulator += FEAT_DATA[j][2];
+			else
+				accumulator += FEAT_DATA[j][1];
+		}
+
+		// if it did not meet the stage threshold, then it is not a face
+		if (accumulator < STAGE_DATA[i])
+			return false;
+	}
+
+	return true;
 }
 
-/** main
- *  Allows the user to enter the message, key, and select execution mode
- *
+/**
+ *	Runs the HAAR_Comparison and stores the result in the corresponding register.
  */
 int main()
 {
-
+	_Bool is_face = HAAR_Comparison();
 
     return 0;
 }
