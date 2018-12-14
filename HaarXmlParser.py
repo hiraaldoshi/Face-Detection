@@ -12,6 +12,8 @@ Authors: Hiraal Doshi and Selena Torres
 import sys
 import xml.etree.ElementTree as ET
 
+feature_nums = []
+rectangle_nums = []
 
 def sci_notation_to_float(n):
     """
@@ -37,6 +39,7 @@ def haar_parser(variable):
             - the right value
             - the stage threshold
     """
+
     tree = ET.parse('haarcascade_frontalface_alt.xml')
     root = tree.getroot()
     stage_number = 0
@@ -91,8 +94,11 @@ def haar_parser(variable):
 
                                         rectangle_number += 1
 
-                            feature_number += 1
+                                    rectangle_nums.append(rectangle_number)
 
+                            feature_number += 1
+                            
+                    feature_nums.append(feature_number)
                     stage_number += 1
 
     # figure out which data we need now
@@ -241,6 +247,32 @@ def Rect_Data_Arr(width, height, x_coord, y_coord):
     print ("};")
 
 
+def Feature_and_Rect_Num():
+    """
+    Generates arrays to hold the amount of features per stage, and the amount of rectangles per feature.
+    """
+
+    data = haar_parser("stage thresh")
+
+    print ("double FEAT_NUMS[22] = {")
+    print()
+    for num in feature_nums:
+        print ("    " + str(num) + ",")
+
+    print ()
+    print ("};")
+
+    print ()
+    print ()
+    print ("double RECT_NUMS[" + str(len(rectangle_nums)) + "] = {")
+    print ()
+    for num in rectangle_nums:
+        print ("    " + str(num) + ",")
+
+    print ()
+    print ("};")
+
+
 def C_Code_Gen(variable):
     """
     Function to invoke one of the C Code generating functions
@@ -266,8 +298,11 @@ def C_Code_Gen(variable):
         y_coord = haar_parser("y_coord")
         Rect_Data_Arr(width, height, x_coord, y_coord)
 
+    elif variable == "numbers":
+        Feature_and_Rect_Num()
+
     else:
-        print ("Parameter did not match, try stage, feature, or rectangle")
+        print ("Parameter did not match, try stage, feature, rectangle, or numbers")
 
 
 if __name__ == '__main__': 
