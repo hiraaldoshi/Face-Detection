@@ -704,6 +704,6 @@ ImageScaler scale (.CLK(VGA_CTRL_CLK), .Captured(!KEY[2]), .read(Scaler_DONE), .
 // ADDR??
 Classifier classify (.CLK(VGA_CTRL_CLK), .START(Scaler_Done), .ADDR(), .XYZ_in({X, Y, Z}), .DONE(Classifier_DONE), .integral_indx(integral_indx), .integral_out(integral_out));
 
-HAAR_Comparison compare (.START(Classifier_DONE), .integral_buffer_in(integral_buffer[HAAR_Y * 20 + HAAR_X]), .x_out(HAAR_X), .y_out(HAAR_Y), .is_face(is_face));
+//HAAR_Comparison compare (.START(Classifier_DONE), .integral_buffer_in(integral_buffer[HAAR_Y * 20 + HAAR_X]), .x_out(HAAR_X), .y_out(HAAR_Y), .is_face(is_face));
 
 endmodule 

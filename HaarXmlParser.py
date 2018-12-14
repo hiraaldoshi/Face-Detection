@@ -1,8 +1,8 @@
 """
 This file is used to convert the HAAR Classifier Data from an XML format into variables, for use in SystemVerilog.
-The information is printed, and later put into a sv file by using:
+The information is printed, and later put into a header file by using:
 
-    $python HaarXmlParser.py "parameter" >> examlpe.h
+    $python HaarXmlParser.py >> examlpe.h
 
 Note: the file was written for use by Python 3
 
@@ -149,7 +149,7 @@ def SystemVerilog_Gen(variable):
             "left": "Left",
             "right": "Right",
             "x_coord": "X_Coord",
-            "y_coord": "Y_Coord",
+            "y_coord": "Y_coord",
             "width": "Width",
             "height": "Height"
     }
@@ -193,6 +193,83 @@ def SystemVerilog_Gen(variable):
     print ("endmodule ")
 
 
+def Stage_Data_Arr(stage_thresh):
+    """
+    Generates a double array for the stage thresholds from HAAR data.
+    """
+    
+    print ("double STAGE_DATA[" + str(len(stage_thresh)) + "] = {")
+    print ()
+    for thresh in stage_thresh.items():
+        print ("    " + thresh[1] + ",")
+
+    print ()
+    print ("};")
+
+
+def Feat_Data_Arr(feature_thresh, left, right):
+    """
+    Generates a double array, containing arrays of size three to hold all corresponding feature data.
+
+        sub arrays contain:
+            {feature_thresh, left, right}
+    """
+
+    print ("double FEAT_DATA[" + str(len(feature_thresh)) + "][3] = {")
+    print ()
+    for thresh, l, r in zip(feature_thresh.items(), left.items(), right.items()):
+        print ("    {" + thresh[1] + ", " + l[1] + ", " + r[1] + "},")
+
+    print ()
+    print ("};")
+
+
+def Rect_Data_Arr(width, height, x_coord, y_coord):
+    """
+    Generates a double array, containing arrays of size four to hold all corresponding rectangle data.
+
+        sub arrays contain:
+            {width, height, x_coord, y_coord}
+    """
+
+    print ("double RECT_DATA[" + str(len(width)) + "][4] = {")
+    print ()
+    for w, h, x, y in zip(width.items(), height.items(), x_coord.items(), y_coord.items()):
+        print ("    {" + w[1] + ", " + h[1] + ", " + x[1] + ", " + y[1] + "},")
+
+    print()
+    print ("};")
+
+
+def C_Code_Gen(variable):
+    """
+    Function to invoke one of the C Code generating functions
+
+    This function generates one of the three arrays needed for the HAAR_Comparison in C, all of which are of double type
+    and varying sizes.
+    """
+    
+    if variable == "stage":
+        stage_thresh = haar_parser("stage thresh")
+        Stage_Data_Arr(stage_thresh)
+
+    elif variable == "feature":
+        feature_thresh = haar_parser("feature thresh")
+        left = haar_parser("left")
+        right = haar_parser("right")
+        Feat_Data_Arr(feature_thresh, left, right)
+
+    elif variable == "rectangle":
+        width = haar_parser("width")
+        height = haar_parser("height")
+        x_coord = haar_parser("x_coord")
+        y_coord = haar_parser("y_coord")
+        Rect_Data_Arr(width, height, x_coord, y_coord)
+
+    else:
+        print ("Parameter did not match, try stage, feature, or rectangle")
+
+
 if __name__ == '__main__': 
     variable = sys.argv[1]
-    SystemVerilog_Gen(variable)
+    C_Code_Gen(variable)
