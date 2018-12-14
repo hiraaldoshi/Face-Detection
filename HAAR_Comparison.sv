@@ -1,7 +1,9 @@
 module HAAR_Comparison (
 
 input logic START,
-input logic [95:0] integral_buffer [400],
+input logic [95:0] integral_buffer_in,
+output logic [4:0] x_out,
+output logic [4:0] y_out,
 output logic is_face
 
 );
@@ -15,6 +17,9 @@ int x_coord;
 int y_coord;
 int width;
 int height;
+
+int x;
+int y;
 
 int feature_thresh;
 int left_val;
@@ -50,17 +55,17 @@ always_comb
 													begin
 													
 														// fill in the integral value array - > 2D
-														for (int x = 0; x < 20 ; x++)			// may just need the top left
+														for (x = 0; x < 20 ; x++)			// may just need the top left
 															begin
 															
 																if (x >= x_coord && x < x_coord + width)
 																	begin
 																
-																		for (int y = 0; y < 20; y++)
+																		for (y = 0; y < 20; y++)
 																			begin
 																			
 																				if (y >= y_coord && y < y_coord + height)
-																					integral += integral_buffer[y * 20 + x]; 
+																					integral += integral_buffer_in; 
 																			
 																			end
 																	
@@ -103,6 +108,9 @@ always_comb
 			is_face = is_face_local;
 			
 	end
+	
+assign x_out = x;
+assign y_out = y;
 
 // call the modules, which contain comb logic, to get new HAAR constants when necessary
 Feature_Amount f_a (.*);
