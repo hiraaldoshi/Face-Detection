@@ -6,14 +6,14 @@ input logic read,
 input logic write,
 input logic [8:0] WR_ADDR,
 output logic [8:0] RD_ADDR,
-input int X_in,
-input int Y_in,
-input int Z_in,
+input int BW_in,
+//input int Y_in,
+//input int Z_in,
 input logic	[15:0] X_Cont,
 input logic	[15:0] Y_Cont,
-output int X_out,
-output int Y_out,
-output int Z_out,
+output int BW_out,
+//output int Y_out,
+//output int Z_out,
 output logic DONE
 
 );
@@ -33,7 +33,7 @@ begin
 				begin
 				
 					if ((X_Cont - 160) % 47 == 0 && Y_Cont % 47 == 0)
-						registers[WR_ADDR] <= {X_in, Y_in, Z_in};
+						registers[WR_ADDR] <= BW_in;
 					
 				end
 				
@@ -48,9 +48,9 @@ begin
 end
 		
 // I'm breaking things
-assign X_out = read ? registers[WR_ADDR][95:64] : 0;
-assign Y_out = read ? registers[WR_ADDR][63:32] : 0;
-assign Z_out = read ? registers[WR_ADDR][31:0] : 0;
+assign BW_out = read ? registers[WR_ADDR][95:64] : 0;
+//assign Y_out = read ? registers[WR_ADDR][63:32] : 0;
+//assign Z_out = read ? registers[WR_ADDR][31:0] : 0;
 
 assign RD_ADDR = WR_ADDR + 1;
 	

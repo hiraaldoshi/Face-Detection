@@ -679,18 +679,18 @@ int X, Y, Z;
 
 wire Classifier_DONE;
 
-logic [4:0] HAAR_X, HAAR_Y;
+//logic [4:0] HAAR_X, HAAR_Y;
 
-logic [95:0] integral_buffer [400];
-logic [95:0] integral_out;
-logic [8:0] integral_indx;
-
-always @(integral_indx)
-	begin
-	
-		integral_buffer[integral_indx] = integral_buffer[integral_indx] + integral_out;
-		
-	end
+//logic [95:0] integral_buffer [400];
+//logic [95:0] integral_out;
+//logic [8:0] integral_indx;
+//
+//always @(integral_indx)
+//	begin
+//	
+//		integral_buffer[integral_indx] = integral_buffer[integral_indx] + integral_out;
+//		
+//	end
 
 wire is_face;
 
@@ -703,7 +703,5 @@ ImageScaler scale (.CLK(VGA_CTRL_CLK), .Captured(!KEY[2]), .read(Scaler_DONE), .
 
 // ADDR??
 Classifier classify (.CLK(VGA_CTRL_CLK), .START(Scaler_Done), .ADDR(), .XYZ_in({X, Y, Z}), .DONE(Classifier_DONE), .integral_indx(integral_indx), .integral_out(integral_out));
-
-//HAAR_Comparison compare (.START(Classifier_DONE), .integral_buffer_in(integral_buffer[HAAR_Y * 20 + HAAR_X]), .x_out(HAAR_X), .y_out(HAAR_Y), .is_face(is_face));
 
 endmodule 

@@ -3,7 +3,10 @@ Avalon-MM Interface
 
 Register Map:
 
- 
+	0-399: 	Integral Buffer
+	509:		SW_START
+	510:		HW_DONE
+	511:		is_face
 
 ************************************************************************/
 
@@ -28,14 +31,14 @@ module avalon_mm_interface (
 );
 
 
-logic [31:0] Reg[400];						// 400*32 bit memory (storing only X data for now)
+logic [31:0] Reg[512];						// 400*32 bit memory (storing only X data for now)
 
 always_ff @ (posedge CLK)
 	begin
 
 	if (RESET)
 		begin
-			for (int i = 0; i < 400; i++)
+			for (int i = 0; i < 512; i++)
 				Reg[i] <= 32'b0;
 		end
 		
@@ -56,8 +59,8 @@ always_ff @ (posedge CLK)
 								
 		end
 		
-	// moved to clockedge
-	EXPORT_DATA	<= {Reg[3][31:16], Reg[0][15:0]};	// fix this
+	// export the HW_DONE and is_face signals
+	EXPORT_DATA	<= {Reg[510][15:0], Reg[511][15:0]};
 			
 	end
 

@@ -3,19 +3,19 @@ module Classifier(
 input logic CLK,
 input logic START,
 input logic [8:0] ADDR,
-input logic [95:0] XYZ_in,
+input int BW_in,
 output logic DONE,
 output logic [8:0] integral_indx,
-output logic [95:0] integral_out
+output int integral_out
 
 );
 
 
-logic [95:0] buffer [20];
-logic [95:0] window_buffer [800];
+int buffer [20];
+int window_buffer [800];
 
 logic [8:0] integral_indx_local;
-logic [95:0] integral_out_local;
+int integral_out_local;
 
 always_ff@ (posedge  CLK)
 	begin 

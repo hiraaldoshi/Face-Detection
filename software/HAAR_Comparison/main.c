@@ -13,7 +13,7 @@
 #include "HAAR_Constants.h"
 
 // Pointer to base address of AES module, make sure it matches Qsys
-volatile unsigned int * INTEGRAL_PTR = (unsigned int *) 0x1000;
+volatile unsigned int * MEM_PTR = (unsigned int *) 0x1000;
 
 /**
  * Determines whether or not the data stored in the integral buffer corresponds to a face.
@@ -40,7 +40,7 @@ _Bool HAAR_Comparison()
 					for (double y = RECT_DATA[k][3]; y < RECT_DATA[k][3] + RECT_DATA[k][1]; y++) {
 
 						// increment according to the integral buffer (calculated by hardware)
-						integral += INTEGRAL_PTR[y * 20 + x];
+						integral += MEM_PTR[y * 20 + x];
 					}
 				}
 			}
@@ -63,7 +63,14 @@ _Bool HAAR_Comparison()
  */
 int main()
 {
+	// Do not begin SW calculations until it gets the signal to begin
+	while (!MEM_PTR[509]);
+
 	_Bool is_face = HAAR_Comparison();
+	MEM_PTR[511] = is_face;
+
+	// tell HW that SW is done
+	MEM_PTR[510] = 1;
 
     return 0;
 }
