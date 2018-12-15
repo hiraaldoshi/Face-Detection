@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 13, 2018 10:47:45 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1544762865903</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 14, 2018 8:20:10 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1544797210895</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Facial-Recognition\software\HAAR_Comparison_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\final_proj_soc.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>

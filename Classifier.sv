@@ -1,29 +1,25 @@
 module Classifier(
 
-input logic CLK,
-input logic START,
-input logic [8:0] ADDR,
 input int BW_in,
+input logic [8:0] ADDR,
 output logic DONE,
 output logic [8:0] integral_indx,
-output int integral_out
+output logic [31:0] integral_out [400]
 
 );
 
 
-int buffer [20];
-int window_buffer [800];
+logic [31:0] buffer [20];
+logic [31:0] window_buffer [800];
+logic [31:0] integral_buffer [400];
 
-logic [8:0] integral_indx_local;
-int integral_out_local;
-
-always_ff@ (posedge  CLK)
+always @(BW_in)
 	begin 
 	
 		// fill up the line buffer
-		buffer[ADDR] <= XYZ_in;
+		buffer[ADDR] <= BW_in;
 		
-		if (ADDR == 19)
+		if ((ADDR + 1) % 20 == 0)
 			begin
 			
 			for (int i = 0; i < 20; i++)
@@ -55,8 +51,7 @@ always_ff@ (posedge  CLK)
 								begin
 								
 									// in top level, ACCUMULATE the current IB value
-									integral_out_local = window_buffer[j * 20 + k * 2] - window_buffer[j * 20 + (40 - k - 1)];
-									integral_indx_local = j * 20 + k;
+									integral_buffer[j * 20 + k] = window_buffer[j * 20 + k * 2] - window_buffer[j * 20 + (40 - k - 1)];
 								
 								end
 						end
@@ -68,7 +63,6 @@ always_ff@ (posedge  CLK)
 			DONE = 1;									// set to 0 elsewhere, later
 	end
 
-assign integral_indx = integral_indx_local;
-assign integral_out = integral_out_local;
+assign integral_out = integral_buffer;
 
 endmodule 

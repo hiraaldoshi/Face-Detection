@@ -550,7 +550,7 @@ SEG7_LUT_8 			u5	(	.oSEG0(HEX0),.oSEG1(HEX1),
 							.oSEG4(HEX4),.oSEG5(HEX5),
 							.oSEG6(HEX6),.oSEG7(HEX7),
 							//.iDIG(Frame_Cont[31:0])			// TODO: add a module that delays
-							.iDIG({is_face, 4'b0, sCCD_B})
+							.iDIG({is_face, 4'b0, 12'b0})
 						);
 
 sdram_pll 			u6	(
@@ -669,39 +669,81 @@ VGA_Controller		u1	(	//	Host Side
 						);
 
 // Face Detection
-
-wire Scaler_DONE;
-wire [8:0] WR_ADDR;
-
-int X_out, Y_out, Z_out;
 int R_norm, G_norm, B_norm;
-int X, Y, Z;
+int BW;
+int BW_scaler;
+logic Scaler_DONE, VALID;
+logic [8:0] ADDR_local;
 
-wire Classifier_DONE;
+logic is_face;
 
-//logic [4:0] HAAR_X, HAAR_Y;
+RGB_Normalizer normalize(
+									.R_in(oVGA_R[9:2]),
+									.G_in(oVGA_G[9:2]),
+									.B_in(oVGA_B[9:2]), 
+									.R_out(R_norm), 
+									.G_out(G_norm), 
+									.B_out(B_norm)
+									
+								);
 
-//logic [95:0] integral_buffer [400];
-//logic [95:0] integral_out;
-//logic [8:0] integral_indx;
-//
-//always @(integral_indx)
-//	begin
-//	
-//		integral_buffer[integral_indx] = integral_buffer[integral_indx] + integral_out;
-//		
-//	end
+RGB_To_XYZ convert(
+							.R_in(R_norm), 
+							.G_in(G_norm), 
+							.B_in(B_norm), 
+							.BW(BW)
+						
+						);
 
-wire is_face;
+ImageScaler scale (	
+							.BW_in(BW),
+							.ADDR_in(ADDR_local), //
+							.X_Cont(X_Cont),
+							.Y_Cont(Y_Cont),
+							.ADDR_out(ADDR_local),
+							.BW_out(BW_scaler),
+							.VALID(VALID),
+							.DONE(Scaler_DONE)
+							
+						);
+						
+logic [31:0] integral_buffer [400];
+						
+always @(BW_scaler)
+	begin
+	
+		if (VALID && !Scaler_DONE)
+			integral_buffer[ADDR_local] = BW_scaler;
+	
+	end
+						
+HAAR_Comparison (
 
-RGB_Normalizer normalize(.R_in(oVGA_R[9:2]), .G_in(oVGA_G[9:2]), .B_in(oVGA_B[9:2]), .R_out(R_norm), .G_out(G_norm), .B_out(B_norm));
+						.START(Scaler_DONE && !KEY[2]),
+						.integral_buffer(integral_buffer),
+						.is_face(is_face)
 
-RGB_To_XYZ convert(.R_in(R_norm), .G_in(G_norm), .B_in(B_norm), .X(X), .Y(Y), .Z(Z));
+ );
+						
+//logic [31:0] EXPORT_DATA;
 
-// remove CLK dependance later maybe; fix the read/write
-ImageScaler scale (.CLK(VGA_CTRL_CLK), .Captured(!KEY[2]), .read(Scaler_DONE), .write(~Scaler_DONE), .WR_ADDR(WR_ADDR), .RD_ADDR(WR_ADDR), .X_in(X), .Y_in(Y), .Z_in(Z), .X_Cont(X_Cont), .Y_Cont(Y_Cont), .X_out(X_out), .Y_out(Y_out), .Z_out(Z_out), .DONE(Scaler_Done));
-
-// ADDR??
-Classifier classify (.CLK(VGA_CTRL_CLK), .START(Scaler_Done), .ADDR(), .XYZ_in({X, Y, Z}), .DONE(Classifier_DONE), .integral_indx(integral_indx), .integral_out(integral_out));
+//final_proj_soc f_soc (
+//								.clk_clk(CLOCK_50),								// Clock input
+//								.reset_reset_n(KEY[0]),							// Reset key
+//								.export_data_new_signal(EXPORT_DATA),	// Exported data
+////								.sdram_wire_addr(DRAM_ADDR),					// sdram_wire.addr
+////								.sdram_wire_ba(DRAM_BA),						// sdram_wire.ba
+////								.sdram_wire_cas_n(DRAM_CAS_N),				// sdram_wire.cas_n
+////								.sdram_wire_cke(DRAM_CKE),						// sdram_wire.cke
+////								.sdram_wire_cs_n(DRAM_CS_N),					// sdram.cs_n
+////								.sdram_wire_dq(DRAM_DQ),						// sdram.dq
+////								.sdram_wire_dqm(DRAM_DQM),						// sdram.dqm
+////								.sdram_wire_ras_n(DRAM_RAS_N),				// sdram.ras_n
+////								.sdram_wire_we_n(DRAM_WE_N),					// sdram.we_n
+////								.sdram_clk_clk(DRAM_CLK),
+//								.bw_in_new_signal(BW_scaler),
+//								.addr_in_new_signal(ADDR_local)
+//								
+//							);
 
 endmodule 

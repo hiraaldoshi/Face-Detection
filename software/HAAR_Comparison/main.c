@@ -29,33 +29,33 @@ _Bool HAAR_Comparison()
 
 	// loop through 22 stages of HAAR Classifiers
 	for (double i = 0; i < 22; i++) {
-		double feat_upper_bound = feat_count + FEAT_NUMS[i];
+		double feat_upper_bound = feat_count + FEAT_NUMS[(int)i];
 
 		// loop through the features, and the corresponding rectangles
 		for (double j = feat_count; j < feat_upper_bound; j++) {
 			double integral = 0;
-			double rect_upper_bound = rect_count + RECT_NUMS[j];
+			double rect_upper_bound = rect_count + RECT_NUMS[(int)j];
 			for (double k = rect_count; k < rect_upper_bound; k++) {
-				for (double x = RECT_DATA[k][2]; x < RECT_DATA[k][2] + RECT_DATA[k][0]; x++) {
-					for (double y = RECT_DATA[k][3]; y < RECT_DATA[k][3] + RECT_DATA[k][1]; y++) {
+				for (double x = RECT_DATA[(int)k][2]; x < RECT_DATA[(int)k][2] + RECT_DATA[(int)k][0]; x++) {
+					for (double y = RECT_DATA[(int)k][3]; y < RECT_DATA[(int)k][3] + RECT_DATA[(int)k][1]; y++) {
 
 						// increment according to the integral buffer (calculated by hardware)
-						integral += MEM_PTR[y * 20 + x];
+						integral += MEM_PTR[(int)(y * 20 + x)] / 10000000;
 					}
 				}
 			}
-			if (integral > FEAT_DATA[j][0])
-				accumulator += FEAT_DATA[j][2];
+			if (integral > FEAT_DATA[(int)j][0])
+				accumulator += FEAT_DATA[(int)j][2];
 			else
-				accumulator += FEAT_DATA[j][1];
+				accumulator += FEAT_DATA[(int)j][1];
 		}
 
 		// if it did not meet the stage threshold, then it is not a face
-		if (accumulator < STAGE_DATA[i])
-			return false;
+		if (accumulator < STAGE_DATA[(int)i])
+			return 0;
 	}
 
-	return true;
+	return 1;
 }
 
 /**

@@ -1,5 +1,5 @@
 Flow report for DE2_115_CAMERA
-Thu Dec 13 21:34:20 2018
+Fri Dec 14 15:17:32 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Dec 13 21:34:20 2018      ;
+; Flow Status                        ; Successful - Fri Dec 14 15:17:18 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_115_CAMERA                              ;
 ; Top-level Entity Name              ; DE2_115_CAMERA                              ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 10,766 / 114,480 ( 9 % )                    ;
+;     Total combinational functions  ; 10,500 / 114,480 ( 9 % )                    ;
+;     Dedicated logic registers      ; 1,059 / 114,480 ( < 1 % )                   ;
+; Total registers                    ; 1059                                        ;
+; Total pins                         ; 428 / 529 ( 81 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 59,344 / 3,981,312 ( 1 % )                  ;
+; Embedded Multiplier 9-bit elements ; 12 / 532 ( 2 % )                            ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/13/2018 21:33:59 ;
+; Start date & time ; 12/14/2018 15:14:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_115_CAMERA      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 138559146995218.154475843905344        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 138559146995218.154482203910076        ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; Off                                    ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -100,8 +100,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4741 MB             ; 00:00:53                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:53                           ;
+; Analysis & Synthesis ; 00:01:02     ; 1.0                     ; 4887 MB             ; 00:01:31                           ;
+; Fitter               ; 00:01:57     ; 1.0                     ; 5538 MB             ; 00:02:53                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4728 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.1                     ; 4905 MB             ; 00:00:12                           ;
+; Total                ; 00:03:18     ; --                      ; --                  ; 00:04:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +114,9 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-SN59AOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-SN59AOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-SN59AOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-SN59AOG  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,6 +124,9 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off DE2_115_CAMERA -c DE2_115_CAMERA
+quartus_fit --read_settings_files=off --write_settings_files=off DE2_115_CAMERA -c DE2_115_CAMERA
+quartus_asm --read_settings_files=off --write_settings_files=off DE2_115_CAMERA -c DE2_115_CAMERA
+quartus_sta DE2_115_CAMERA -c DE2_115_CAMERA
 
 
 
